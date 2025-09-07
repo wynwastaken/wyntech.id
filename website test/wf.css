@@ -125,6 +125,8 @@ body{
   }
   .head{
     position: relative;
+    display: flex;
+    justify-content: space-between;
   } 
   .menu-bar{
     display: flex;
