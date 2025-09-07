@@ -79,7 +79,7 @@ body{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
     position: absolute;   
@@ -125,7 +125,7 @@ body{
   }
   .head{
     position: relative;
-  }
+  } 
   .menu-bar{
     display: flex;
     background-color: #1E419D;
