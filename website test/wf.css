@@ -67,9 +67,9 @@ body{
 }
 
 .hamburger{
-    position: absolute;
-    user-select: none;
+    display: none;
     visibility: hidden;
+    
 }
 
 .menu-bar{
@@ -84,8 +84,6 @@ body{
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
     position: absolute;   
     top: 4rem;            
-    left: 0;
-    right: 0;
     flex-direction: column;
     background-color: #1E419D;
     text-align: center;
@@ -93,20 +91,21 @@ body{
     z-index: 10000;
   }
 
-  
 
   .hamburger {
-    position: static;
+    display: flex;
     visibility: visible;
     font-size: 2rem;
     color: white;
     cursor: pointer;
     user-select: none;
-    
+    margin-right: 1rem;
   }
 
   .wf-logo{
+    display: flex;
     height: 7rem;
+
   }
   
   .sign-in.s1{
@@ -127,6 +126,7 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
+    width: auto;
   } 
   .menu-bar{
     display: flex;
