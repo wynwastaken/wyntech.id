@@ -1,0 +1,27 @@
+
+body{
+    overflow-x: hidden;
+}
+.carousel{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel img{
+    height: 50vh;
+    
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-280vh);  /* start off right */
+  }
+  100% {
+    transform: translateX(100vh); /* move left */
+  }
+}
