@@ -79,7 +79,7 @@ body{
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
     position: absolute;   
