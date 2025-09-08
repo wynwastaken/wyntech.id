@@ -3,9 +3,11 @@
 .carousel{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    gap: 100px;
     transition: transform 0.6s ease;
     perspective: 1000px;
+    width: fit-content;
+    
 }
 
 .carousel img{
@@ -20,5 +22,6 @@
     background-color: red;
     display: flex;
     align-items: center;
+    justify-content: start;
 }
 

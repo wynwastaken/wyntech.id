@@ -2,16 +2,26 @@ let index = 0;
 const carousel = document.querySelector('.carousel');
 const cards = document.querySelectorAll('.card');
 const windowEl = document.querySelector('.carousel-window');
-index = 0;   
-function showSlide() {
-  // clamp index so it stays between 0 and cards.length - 1
-  if(index >= cards.length) index = 0;
 
-  const offset = -index * windowEl.clientWidth;
+
+
+// ambil ukuran card
+const cardWidth = cards[0].offsetWidth;
+
+// ambil gap dari parent (.carousel)
+const carouselStyle = getComputedStyle(carousel);
+const gap = parseInt(carouselStyle.gap);
+
+// total lebar satu slide = card + gap
+const slideSize = cardWidth + gap;
+
+function showSlide() {
+  if (index >= cards.length) index = 0;
+
+  const offset = -index * slideSize;
   carousel.style.transform = `translateX(${offset}px)`;
+
   index++;
 }
-// Example: auto slide every 3s
-setInterval(() => {
-  showSlide()
-}, 3000);
+
+setInterval(showSlide, 3000);
