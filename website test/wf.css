@@ -91,14 +91,15 @@ body{
   height: 100vh;
   opacity: 0;
   transition: opacity 0.2s ease;
-  
+  user-select: none;
 }
 
 .sign-in-form{
+
   background-color: rgb(255,255,255,0.2);
   border: 0.5px solid white;
   width: 70vh;
-  height: 60%;
+  height: 62%;
   border-radius: 4px;
   
 }
@@ -109,6 +110,7 @@ body{
   align-items: center;
   font-family: 'Lilita One';
   height: 100%;
+  
   
   
 }
@@ -124,6 +126,7 @@ body{
 .form-input{
   display: flex;
   flex-direction: column;
+  
 }
 
 
@@ -149,6 +152,7 @@ body{
 
 #loginl{
   font-size: 6vh;
+  
 }
 
 #sign-in-navs{
@@ -164,7 +168,17 @@ body{
   margin-top: 3vh;
 }
 
+#length-passwordl{
 
+  font-size: 2vh;
+  color: red;
+  
+}
+
+#required-usernamel{
+  font-size: 2vh;
+  color: red;
+}
 @media (max-width: 550px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
@@ -232,12 +246,15 @@ body{
     
   }
 
+
   .sign-in-form{
-    width: 50vh;
+    width: 43vh;
+    margin-bottom: 20vh;
+    height: 57vh;
   }
 
   #username,#password{
-    width: 40vh;
+    width: 35vh;
   }
 
   #fpasswordl{
