@@ -79,9 +79,91 @@ body{
     
 }
 
-.hilang{
-  display: none;
+
+.sign-in-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  background-image: url("bg.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  
 }
+
+.sign-in-form{
+  background-color: rgb(255,255,255,0.2);
+  border: 0.5px solid white;
+  width: 70vh;
+  height: 60%;
+  border-radius: 4px;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lilita One';
+  height: 100%;
+  
+  
+}
+
+#username,#password{
+  width: 50vh;
+  height: 5vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#nav-sign-in{
+  background-color: #1E419D;
+  border-radius: 4px;
+  width: 22vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+#usernamel,#passwordl,#loginl,#fpasswordl,#createl{
+  color: white;
+}
+
+#fpasswordl{
+  position: relative;
+  left: 15vh;
+}
+
+#loginl{
+  font-size: 6vh;
+}
+
+#sign-in-navs{
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  width: 40vh;
+  height: 20vh;
+}
+.fi2{
+  margin-top: 3vh;
+}
+
 
 @media (max-width: 550px) {
   .navs {
@@ -148,5 +230,27 @@ body{
     user-select: none;
     padding-top: 1rem;
     
+  }
+
+  .sign-in-form{
+    width: 50vh;
+  }
+
+  #username,#password{
+    width: 40vh;
+  }
+
+  #fpasswordl{
+    left: 10vh;
+  }
 }
+
+
+.muncul{
+  visibility: visible;
+  opacity: 1;
+}
+
+.hilang{
+  display: none;
 }
