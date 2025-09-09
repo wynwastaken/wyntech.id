@@ -46,6 +46,10 @@
     transform: rotate(180deg);
 }
 
+.hidden{
+    display: none;
+}
+
 .header-faq{
    display: flex;
    

@@ -14,6 +14,7 @@ body{
     gap: 2.7rem;
     border-bottom:1px solid black;
     z-index: 9999;
+    user-select: none;
 }
 
 .wf-logo{
@@ -68,7 +69,7 @@ body{
 
 .hamburger{
     display: none;
-    visibility: hidden;
+    
     
 }
 
@@ -78,6 +79,9 @@ body{
     
 }
 
+.hilang{
+  display: none;
+}
 
 @media (max-width: 550px) {
   .navs {
