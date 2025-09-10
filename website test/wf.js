@@ -40,8 +40,10 @@ buttons.forEach(function(el){
 input_username.addEventListener('input',function(){
     if(!input_username.value.trim()){
         warning_username.classList.add('muncul2');
+        input_username.classList.add('warning');
     }else{
         warning_username.classList.remove('muncul2');
+        input_username.classList.remove('warning');
     }
 });
 
@@ -49,7 +51,9 @@ input_username.addEventListener('input',function(){
 input_password.addEventListener('input',function(){
     if(!input_password.value.trim() || input_password.value.trim().length < 8){
         warning_password.classList.add('muncul2');
+        input_password.classList.add('warning');
     }else{
         warning_password.classList.remove('muncul2');
+        input_password.classList.remove('warning');
     }
     });
