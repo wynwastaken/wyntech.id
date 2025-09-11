@@ -19,6 +19,8 @@ const warning_email2= document.getElementById('required-emaill2');
 const  show = document.querySelectorAll('.show-icon');
 const create_link = document.getElementById('createl');
 const sign_up_form = document.querySelector('.sign-up-form');
+const return_arrow1 = document.querySelector('.back1');
+const menu_produk = document.querySelector('.produk');
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 input_email.addEventListener('input', function () {
@@ -53,9 +55,11 @@ hamburger.addEventListener('click',function(){
 
 sign_ins.forEach(function(el){
     el.addEventListener('click',function(){
-        head.classList.add('hilang');
-        menu_bar.classList.add('hilang');
-        sign_in_page.classList.add('muncul');
+        menu_produk.classList.add('hilang-smooth');
+        setTimeout(function() {
+            menu_produk.classList.add('hilang');
+            sign_in_page.classList.add('muncul');
+        }, 100);
     })
 });
 
@@ -127,3 +131,13 @@ create_link.addEventListener('click',function(){
     sign_up_form.classList.add('muncul');
 });
 
+
+return_arrow1.addEventListener('click',function(){
+    
+    sign_in_page.classList.remove('muncul');
+
+    setTimeout(function() {
+        menu_produk.classList.remove('hilang');
+        menu_produk.classList.remove('hilang-smooth');
+    }, 50);
+});
