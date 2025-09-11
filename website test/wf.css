@@ -108,17 +108,18 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
   font-family: 'Lilita One';
   height: 100%;
   width: 100%;
+  
   
   
 }
 
 
 
-#username,#password{
+#email,#email2,#password,#username2,#password2{
   width: 50vh;
   height: 5vh;
   border: 2px solid #ccc;
@@ -127,7 +128,7 @@ body{
   
 }
 
-#password{
+#password,#password2{
   width: 40vh;
   
   border-top-right-radius: 0;
@@ -137,10 +138,11 @@ body{
 input:focus{
   outline: none;
 }
-#username.warning{
+#password.warning,#username.warning,#email.warning,#email2.warning{
   border: 2px solid red;
 }
-#password.warning{
+
+#password2.warning,#username2.warning{
   border: 2px solid red;
 }
 
@@ -148,11 +150,12 @@ input:focus{
   display: flex;
   flex-direction: column;
   gap: 3px;
+  
 }
 
 
 
-#nav-sign-in{
+#nav-sign-in,#nav-sign-up{
   background-color: #1E419D;
   border-radius: 4px;
   width: 22vh;
@@ -163,7 +166,7 @@ input:focus{
   color: white;
   
 }
-#usernamel,#passwordl,#loginl,#fpasswordl,#createl,#createl2{
+#emaill,#emaill2,#usernamel,#passwordl,#loginl,#fpasswordl,#createl,#createl2{
   color: white;
 }
 
@@ -175,6 +178,11 @@ input:focus{
 #loginl,#createl2{
   font-size: 6vh;
   
+  
+}
+#createl2{
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 #sign-in-navs{
@@ -187,14 +195,12 @@ input:focus{
   height: 17vh;
   
 }
-.fi2{
-  margin-top: 1vh;
-}
 
 
 
 
-#length-passwordl,#required-usernamel{
+
+#length-passwordl,#required-emaill,#required-emaill2{
   
   font-size: 2vh;
   color: red;
@@ -203,12 +209,43 @@ input:focus{
   transition: opacity 0.3s ease;
   
 }
+
+#length-passwordl2,#required-usernamel2{
+  
+  font-size: 2vh;
+  color: red;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
 #required-usernamel.muncul2{
   visibility:visible;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
+#required-emaill.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#required-emaill2.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
 #length-passwordl.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  
+}
+
+#required-usernamel2.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#length-passwordl2.muncul2{
   visibility:visible;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -239,6 +276,7 @@ input:focus{
   display: none;
   opacity: 0;
   transition: opacity 1s ease-out;
+  
 }
 @media (max-width: 550px) {
   .navs {
@@ -308,16 +346,16 @@ input:focus{
   }
 
 
-  .sign-in-form{
+  .sign-in-form,.sign-up-form{
     width: 43vh;
     margin-bottom: 20vh;
     height: 59vh;
   }
 
-  #username,#password{
+  #email,#email2,#password,#username2,#password2{
     width: 35vh;
   }
-  #password{
+  #password,#password2{
     width: 25vh;
     
   }
@@ -327,7 +365,8 @@ input:focus{
   }
 
   .show-icon{
-    padding-top: 8px;
+    padding-top: 6px;
+
   }
   
 }

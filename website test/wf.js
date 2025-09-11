@@ -6,13 +6,41 @@ const click_audio = document.getElementById('click-sound-effect');
 const buttons = document.querySelectorAll('.button');
 const sign_in_page =document.querySelector('.sign-in-page');
 const sign_in_form = document.querySelector('.sign-in-form');
-const warning_username = document.getElementById('required-usernamel');
 const warning_password = document.getElementById('length-passwordl');
-const input_username = document.getElementById('username');
+const warning_username2 = document.getElementById('required-usernamel2');
+const warning_password2 = document.getElementById('length-passwordl2');
 const input_password = document.getElementById('password');
+const input_username2 = document.getElementById('username2');
+const input_password2 = document.getElementById('password2');
+const input_email = document.getElementById('email');
+const warning_email = document.getElementById('required-emaill');
+const input_email2 = document.getElementById('email2');
+const warning_email2= document.getElementById('required-emaill2');
 const  show = document.querySelectorAll('.show-icon');
 const create_link = document.getElementById('createl');
 const sign_up_form = document.querySelector('.sign-up-form');
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+input_email.addEventListener('input', function () {
+  if (!emailRegex.test(input_email.value.trim())) {
+    warning_email.classList.add('muncul2');
+    input_email.classList.add("warning");
+  } else {
+    
+    warning_email.classList.remove('muncul2');
+    input_email.classList.remove("warning");
+  }
+});
+input_email2.addEventListener('input', function () {
+  if (!emailRegex.test(input_email2.value.trim())) {
+    warning_email2.classList.add('muncul2');
+    input_email2.classList.add("warning");
+  } else {
+    
+    warning_email2.classList.remove('muncul2');
+    input_email2.classList.remove("warning");
+  }
+});
 
 hamburger.addEventListener('click',function(){
     if(menu_bar.classList.contains('show')){
@@ -20,6 +48,7 @@ hamburger.addEventListener('click',function(){
     }else{
         menu_bar.classList.add('show');
     }
+    
 });
 
 sign_ins.forEach(function(el){
@@ -40,15 +69,19 @@ buttons.forEach(function(el){
     })
 });
 
-input_username.addEventListener('input',function(){
-    if(!input_username.value.trim()){
-        warning_username.classList.add('muncul2');
-        input_username.classList.add('warning');
+
+
+
+input_username2.addEventListener('input',function(){
+    if(!input_username2.value.trim()){
+        warning_username2.classList.add('muncul2');
+        input_username2.classList.add('warning');
     }else{
-        warning_username.classList.remove('muncul2');
-        input_username.classList.remove('warning');
+        warning_username2.classList.remove('muncul2');
+        input_username2.classList.remove('warning');
     }
 });
+
 
 
 input_password.addEventListener('input',function(){
@@ -60,19 +93,33 @@ input_password.addEventListener('input',function(){
         input_password.classList.remove('warning');
     }
     });
+input_password2.addEventListener('input',function(){
+    if(!input_password2.value.trim() || input_password2.value.trim().length < 8){
+        warning_password2.classList.add('muncul2');
+        input_password2.classList.add('warning');
+    }else{
+        warning_password2.classList.remove('muncul2');
+        input_password2.classList.remove('warning');
+    }
+    });
+
+    
+    
 
 
 show.forEach(function(el){
     el.addEventListener('click',function(){
     if(input_password.type === "password"){
         input_password.type = "text";
-        show.src = "unshow.png";
+        input_password2.type = "text";
+        el.src = "unshow.png";
     }else{
         input_password.type = "password";
-        show.src = "show.png";
+        input_password2.type = "password";
+        el.src = "show.png";
     }
-    });
-})
+    })
+});
 
 
 create_link.addEventListener('click',function(){
