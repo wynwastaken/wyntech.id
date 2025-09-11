@@ -94,7 +94,7 @@ body{
   user-select: none;
 }
 
-.sign-in-form{
+.sign-in-form,.sign-up-form{
 
   background-color: rgb(255,255,255,0.2);
   border: 0.5px solid white;
@@ -104,26 +104,35 @@ body{
   
 }
 
-.form{
+.form,.form2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   font-family: 'Lilita One';
   height: 100%;
-  
+  width: 100%;
   
   
 }
 
+
+
 #username,#password{
   width: 50vh;
   height: 5vh;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   border-color: white;
   
 }
 
+#password{
+  width: 40vh;
+  
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
 input:focus{
   outline: none;
@@ -142,6 +151,7 @@ input:focus{
 }
 
 
+
 #nav-sign-in{
   background-color: #1E419D;
   border-radius: 4px;
@@ -153,7 +163,7 @@ input:focus{
   color: white;
   
 }
-#usernamel,#passwordl,#loginl,#fpasswordl,#createl{
+#usernamel,#passwordl,#loginl,#fpasswordl,#createl,#createl2{
   color: white;
 }
 
@@ -162,7 +172,7 @@ input:focus{
   left: 15vh;
 }
 
-#loginl{
+#loginl,#createl2{
   font-size: 6vh;
   
 }
@@ -172,12 +182,13 @@ input:focus{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1vh;
+  gap: 10px;
   width: 40vh;
   height: 17vh;
+  
 }
 .fi2{
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 
 
@@ -204,8 +215,31 @@ input:focus{
   
 }
 
+.show-icon{
+  padding-top:6.1px;
+  padding-bottom: 6px;
+  height: 4vh;
+  width: 10vh;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  
+  
+}
+
+.password-input-toggle{
+  display: flex;
+  flex-direction: row;
+}
 
 
+
+.sign-up-form{
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
 @media (max-width: 550px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
@@ -283,16 +317,31 @@ input:focus{
   #username,#password{
     width: 35vh;
   }
+  #password{
+    width: 25vh;
+    
+  }
 
   #fpasswordl{
     left: 10vh;
   }
+
+  .show-icon{
+    padding-top: 8px;
+  }
+  
 }
 
 
 .muncul{
+  display: flex;
   visibility: visible;
   opacity: 1;
+}
+
+.hilang-smooth{
+  visibility: hidden;
+  opacity: 0;
 }
 
 

@@ -14,7 +14,7 @@
         <img class="wf-logo" src="wf-logo.png" alt="wfdigistore logo">
         <div class="navs">
             <div class="nav button">Produk</div>
-            <div class="nav button">Pembelian</div>
+            <div class="nav button">Pesanan</div>
             <div class="nav button">Keranjang</div>
             <div class="nav button"> Bantuan</div>
         </div>
@@ -24,14 +24,14 @@
         
     <div class="menu-bar">
         <div class="nav button">Produk</div>
-        <div class="nav button">Pembelian</div>
+        <div class="nav button">Pesanan</div>
         <div class="nav button">Keranjang</div>
         <div class="nav button"> Bantuan</div>
         <div class="sign-in s2 button">Sign in</div>
     </div>
 
     <div class="sign-in-page">
-        <div class="sign-in-form">
+        <div class="sign-in-form ">
             <form class = "form" action="">
                 <h3 id="loginl">Login</h3>
                 <div class="form-input fi1">
@@ -41,7 +41,12 @@
                 </div>
                 <div class="form-input fi2">
                     <label id = "passwordl" for="password">Password</label>
-                    <input type="text" id="password" placeholder="••••••••" name="password" required>
+
+                    <div class="password-input-toggle">
+                        <input type="password" id="password" placeholder="••••••••" name="password" required>
+                        <img class = "show-icon" src="show.png" alt="show">
+                    </div>
+                    
                     <div id="length-passwordl">Password must atleast be 8 Characters</div>
                 </div>
                 <div id="sign-in-navs">
@@ -52,7 +57,28 @@
                 
             </form> 
         </div>
+        <div class="sign-up-form">
+            <form class = "form2" action="">
+                <h3 id="createl2">Create</h3>
+                <div class="form-input fi1">
+                    <label id = "usernamel" for="username">Username</label>
+                    <input type="text" id="username" placeholder="wfdigistore" name="username" required>
+                    <div id="required-usernamel">username is a required field</div>
+                </div>
+                <div class="form-input fi2">
+                    <label id = "passwordl" for="password">Password</label>
+
+                    <div class="password-input-toggle">
+                        <input type="password" id="password" placeholder="••••••••" name="password" required>
+                        <img class = "show-icon" src="show.png" alt="show">
+                    </div>
+                    
+                    <div id="length-passwordl">Password must atleast be 8 Characters</div>
+                </div>
+            </form>
+        </div>
     </div>
+
 
 </body>
 <audio id = "click-sound-effect" src="click-sound-effect.wav"></audio>
