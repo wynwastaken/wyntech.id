@@ -171,6 +171,12 @@ input:focus{
   color: white;
 }
 
+#createl.cl2{
+  color: white;
+  margin-top: 10px;
+}
+
+
 #fpasswordl{
   position: relative;
   left: 15vh;
@@ -222,6 +228,10 @@ input:focus{
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+}
+
+#length-passwordl2{
+  margin-bottom: 10px;
 }
 #required-usernamel.muncul2{
   visibility:visible;
@@ -380,8 +390,8 @@ input:focus{
   }
 
   .show-icon{
-    padding-top: 6px;
-
+    padding-top: 7px;
+    padding-bottom: 0.385rem;
   }
 
   .back1{

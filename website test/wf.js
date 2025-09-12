@@ -21,6 +21,8 @@ const create_link = document.getElementById('createl');
 const sign_up_form = document.querySelector('.sign-up-form');
 const return_arrow1 = document.querySelector('.back1');
 const menu_produk = document.querySelector('.produk');
+const already_have = document.querySelector('.cl2');
+
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 input_email.addEventListener('input', function () {
@@ -129,6 +131,11 @@ show.forEach(function(el){
 create_link.addEventListener('click',function(){
     sign_in_form.classList.add('hilang');
     sign_up_form.classList.add('muncul');
+});
+
+already_have.addEventListener('click',function(){
+    sign_in_form.classList.remove('hilang');
+    sign_up_form.classList.remove('muncul');
 });
 
 
