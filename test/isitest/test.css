@@ -1,0 +1,131 @@
+.head{
+    margin: 0;
+}
+
+.head{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: #1E419D;
+    height: 5.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 2.7rem;
+    border-bottom:1px solid black;
+    z-index: 9999;
+    user-select: none;
+}
+
+.navs{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 5vh;
+    color: white;
+    align-items: center;
+    font-family: 'Lilita One';
+    font-size: 3.3vh;
+    margin-right: 3vh;
+    flex: 1;
+    
+}
+
+.wf-logo{
+    position: relative;
+    height: 21vh;
+    width: auto;
+    
+}
+.nav{
+    text-shadow: 2px 4px 1px black;
+}
+
+.sign-in{
+    display: flex;
+    
+    align-items: center;
+    color: white;
+    font-family: 'Lilita One';
+    font-size: 3.3vh;
+    border: 2px solid white;
+    height: 6vh;
+    border-radius: 8px;
+    margin-right: 5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    user-select: none;
+    min-width: 10vh;
+}
+
+
+.navs {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  color: white;
+  font-family: 'Lilita One';
+  font-size: 1.7rem;
+  transition: opacity 0.3s ease;
+}
+
+.hamburger{
+    display: flex;
+    color: white;   
+    padding-right: 3rem;
+}
+
+.menu-bar{
+    z-index: 9998;
+    visibility: hidden;   
+}
+
+.Bg{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    
+}
+
+.text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+
+
+.isi{
+    position: absolute;
+   
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+
+
+
+    width: 70%;
+    height: 20%;
+}
+
+.garis{
+    border-bottom: 2px solid black;
+}
+        
+
+
+
