@@ -1,7 +1,19 @@
-.head{
+body{
     margin: 0;
+    
 }
 
+.halaman-produk{
+    
+    background-image: url("Bg.png");
+    background-size: cover;
+    width: 100%;
+    height: 86.5vh;
+}
+
+h1{
+    margin: 0;
+}
 .head{
     display: flex;
     flex-direction:row;
@@ -12,7 +24,6 @@
     box-sizing: border-box;
     gap: 2.7rem;
     border-bottom:1px solid black;
-    z-index: 9999;
     user-select: none;
 }
 
@@ -74,27 +85,18 @@
     padding-right: 3rem;
 }
 
-.menu-bar{
-    z-index: 9998;
-    visibility: hidden;   
-}
+
 
 .Bg{
     flex: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    
 }
 
 .text{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     color: blue;
     text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
@@ -110,14 +112,7 @@
 
 
 .isi{
-    position: absolute;
-   
-    transform: translate(-50%, -50%);
-    top: 60%;
-    left: 50%;
-
-
-
+    
     width: 70%;
     height: 20%;
 }
@@ -126,6 +121,4 @@
     border-bottom: 2px solid black;
 }
         
-
-
 
