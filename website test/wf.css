@@ -158,6 +158,7 @@ input:focus{
 
 #nav-sign-in,#nav-sign-up{
   background-color: #1E419D;
+  border: none;
   border-radius: 4px;
   width: 22vh;
   height: 5vh;
@@ -165,8 +166,10 @@ input:focus{
   align-items: center;
   justify-content: center;
   color: white;
-  
+  font-family: 'Lilita One';
+  font-size:3vh;
 }
+
 #emaill,#emaill2,#usernamel,#passwordl,#loginl,#fpasswordl,#createl,#createl2{
   color: white;
 }
