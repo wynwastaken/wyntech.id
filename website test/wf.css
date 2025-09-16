@@ -1,10 +1,14 @@
 body{
     margin: 0;
+    background-image: url('bg2.png');
+    background-attachment: fixed;
 }
 
 
 .head{
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction:row;
     align-items: center;
     background-color: #1E419D;
