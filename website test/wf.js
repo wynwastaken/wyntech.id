@@ -71,7 +71,17 @@ function toggleScroll(){
         scroll_up.classList.add('hilang-smooth');
     }
 }
-window.addEventListener('scroll',toggleScroll);
+window.addEventListener('scroll',function (){
+    if(!isScrollListenerActive) return;
+    
+    const PositionWindow = window.scrollY;
+    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
+    if(PositionWindow >= PositionScrollShow){
+        scroll_up.classList.remove('hilang-smooth');
+    }else{
+        scroll_up.classList.add('hilang-smooth');
+    }
+});
 
 scroll_up.addEventListener('click',function(){
     if(!scroll_up.classList.contains('hilang-smooth')){
