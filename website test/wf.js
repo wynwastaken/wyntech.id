@@ -153,7 +153,7 @@ return_arrow1.addEventListener('click',function(){
 
 window.addEventListener('scroll',function(){
     const PositionWindow = window.scrollY;
-    const PositionScrollShow = 500;
+    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
     if(PositionWindow >= PositionScrollShow){
         scroll_up.classList.remove('hilang-smooth');
     }else{
