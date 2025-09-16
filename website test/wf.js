@@ -24,7 +24,9 @@ const menu_produk = document.querySelector('.produk');
 const already_have = document.querySelector('.cl2');
 
 const scroll_up = document.querySelector('.scroll-up');
+const container_scroll_up = document.querySelector('.container-scroll-up');
 
+let isScrollListenerActive = true;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 input_email.addEventListener('input', function () {
   if (!emailRegex.test(input_email.value.trim())) {
@@ -56,9 +58,36 @@ hamburger.addEventListener('click',function(){
     
 });
 
+
+
+function toggleScroll(){
+    if(!isScrollListenerActive) return;
+    
+    const PositionWindow = window.scrollY;
+    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
+    if(PositionWindow >= PositionScrollShow){
+        scroll_up.classList.remove('hilang-smooth');
+    }else{
+        scroll_up.classList.add('hilang-smooth');
+    }
+}
+window.addEventListener('scroll',toggleScroll);
+
+scroll_up.addEventListener('click',function(){
+    if(!scroll_up.classList.contains('hilang-smooth')){
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    }
+});
+
 sign_ins.forEach(function(el){
     el.addEventListener('click',function(){
         menu_produk.classList.add('hilang-smooth');
+        container_scroll_up.classList.add('hilang-smooth');
+        isScrollListenerActive = false;
+        document.body.style.overflowY = 'hidden'; 
         setTimeout(function() {
             menu_produk.classList.add('hilang');
             sign_in_page.classList.add('muncul');
@@ -141,9 +170,10 @@ already_have.addEventListener('click',function(){
 
 
 return_arrow1.addEventListener('click',function(){
-    
+    container_scroll_up.classList.remove('hilang-smooth');
+    isScrollListenerActive = true;
     sign_in_page.classList.remove('muncul');
-
+    document.body.style.overflowY = 'auto'; 
     setTimeout(function() {
         menu_produk.classList.remove('hilang');
         menu_produk.classList.remove('hilang-smooth');
@@ -151,21 +181,4 @@ return_arrow1.addEventListener('click',function(){
 });
 
 
-window.addEventListener('scroll',function(){
-    const PositionWindow = window.scrollY;
-    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
-    if(PositionWindow >= PositionScrollShow){
-        scroll_up.classList.remove('hilang-smooth');
-    }else{
-        scroll_up.classList.add('hilang-smooth');
-    }
-});
 
-scroll_up.addEventListener('click',function(){
-    if(!scroll_up.classList.contains('hilang-smooth')){
-        window.scrollTo({
-            top:0,
-            behavior:'smooth'
-        })
-    }
-});

@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-image: url('bg2.png');
     background-attachment: fixed;
+    
 }
 
 
@@ -79,7 +80,9 @@ body{
 }
 
 .menu-bar{
-    z-index: 9998;
+
+    position: sticky;
+    top: 88px;
     visibility: hidden;
     transition: opacity 0.2s ease,transform 0.1s ease;
 }
@@ -428,9 +431,14 @@ input:focus{
     height: 180vh;
 }
 
+
+
 .hilang{
   display: none;
 }
+
+
+
 .scroll-up{
   
   width: 40px;
