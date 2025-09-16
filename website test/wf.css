@@ -419,8 +419,15 @@ input:focus{
 
 .produk {
     transition: opacity 0.1s ease, visibility 0.1s ease;
+    height: 180vh;
 }
 
 .hilang{
   display: none;
+}
+.scroll-up{
+  position: absolute;
+  font-size: 10vh;
+  right: 48%;
+  transition: opacity 1s ease;
 }

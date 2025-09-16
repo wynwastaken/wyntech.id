@@ -23,6 +23,7 @@ const return_arrow1 = document.querySelector('.back1');
 const menu_produk = document.querySelector('.produk');
 const already_have = document.querySelector('.cl2');
 
+const scroll_up = document.querySelector('.scroll-up');
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 input_email.addEventListener('input', function () {
@@ -147,4 +148,24 @@ return_arrow1.addEventListener('click',function(){
         menu_produk.classList.remove('hilang');
         menu_produk.classList.remove('hilang-smooth');
     }, 50);
+});
+
+
+window.addEventListener('scroll',function(){
+    const PositionWindow = window.scrollY;
+    const PositionScrollShow = 500;
+    if(PositionWindow >= PositionScrollShow){
+        scroll_up.classList.remove('hilang-smooth');
+    }else{
+        scroll_up.classList.add('hilang-smooth');
+    }
+});
+
+scroll_up.addEventListener('click',function(){
+    if(!scroll_up.classList.contains('hilang-smooth')){
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    }
 });
