@@ -328,12 +328,164 @@ input:focus{
   top: 20px;
 }
 
+.isi{
+    padding-top: 50px;
+}
+
+
+.pertanyaan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(0, 74, 74);
+}
+
+
+.kotak_tanya{
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48rem;
+}
+
+.tanya{
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold
+}
+
+
+.arrow{
+    background-color: cornflowerblue;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    transition: transform 0.25s ease;
+}
+
+.jawaban {
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
+    padding: 0 16px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+ 
+    width: 59.5%;
+    color: #111;
+}
+
+.jawaban p { 
+    margin: 10px 0; 
+    line-height: 1.6; 
+}
+
+.garis{
+    border-bottom: 2px solid black;
+    width: 50rem;
+    background-color: rgb(0, 255, 255);
+    padding-top: 10px;
+}
+
+.kotak_tanya.open{
+    box-shadow: gray;
+}
+
+.kotak_tanya.open .arrow{
+    transform: rotate(180deg);
+}
+
+.kotak_tanya.open + .jawaban{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    opacity: 1;
+    max-height: 400px;
+}
+      
+/*3====================D*/
+
+.lower{
+    /*3====D*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*3====D*/
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: gray;
+}
+
+.isi_lower{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+    
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+/* .judul_lower{
+    font-size:x-large;
+    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+} */
+
+.judul_lower h3{
+
+    color: #1E419D;
+    background-color:cadetblue;
+    margin-bottom: 0.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    
+    
+    width: 360px;
+    
+
+
+}
+
+.judul_lower p{
+
+    color: #555;
+    background-color:cadetblue;
+    font-size:smaller;
+    width: 360px;
+}
+
+.hubungi{
+    font-size: 1rem;
+    background-color: #1E419D;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hubungi:hover{
+    background-color: #15317a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 750px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
-    position: absolute;   
-    top: 4rem;            
+    position: relative;   
+    top: 4rem;              
     flex-direction: column;
     background-color: #1E419D;
     text-align: center;
@@ -395,8 +547,7 @@ input:focus{
   }
 
   .head-menu{
-    position: sticky;
-    top: 0;
+    
     height: 87px;
     overflow: hidden;
     transition: height 1s ease;
@@ -434,6 +585,189 @@ input:focus{
     position: relative;
     top: 30px;
   }
+  
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        padding-top: 40px;
+        font-family:Arial, Helvetica, sans-serif;
+
+        background-color: rgb(62, 121, 121);
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+        background-color: rgb(0, 255, 255);
+        padding-top: 1px;
+    }
+
+/*3===============================D*/
+
+    .isi{
+      width: 30vh;
+        padding-top: 50px;
+    }
+
+
+    .pertanyaan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-color: rgb(0, 74, 74);
+    }
+
+
+    .kotak_tanya{
+        background-color: coral;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:7vh;
+    }
+
+    .tanya{
+        font-size:x-large;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold
+    }
+
+
+    .arrow{
+        background-color: cornflowerblue;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 999px;
+        transition: transform 0.25s ease;
+    }
+
+    .jawaban {
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
+        padding: 0 16px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 4px;
+ 
+        width: 78.5%;
+        color: #111;
+    }
+
+    .jawaban p { 
+        margin: 10px 0; 
+        line-height: 1.6; 
+    }
+
+    .garis{
+        border-bottom: 2px solid black;
+        width: 20rem;
+        background-color: rgb(0, 255, 255);
+        padding-top: 10px;
+    }
+
+    .kotak_tanya.open{
+        box-shadow: gray;
+    }
+
+    .kotak_tanya.open .arrow{
+        transform: rotate(180deg);
+    }
+
+    .kotak_tanya.open + .jawaban{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        opacity: 1;
+        max-height: 400px;
+    }
+      
+/*3====================D*/
+
+    .lower{
+    /*3====D*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    /*3====D*/
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: gray;
+    }
+
+    .isi_lower{
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        text-align: center;
+    
+        padding-bottom: 20px;
+        width: 90%;
+    }
+
+
+
+    .judul_lower h3{
+
+        color: #1E419D;
+        background-color:cadetblue;
+        margin-bottom: 0.5rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:x-large;
+    
+    
+        width: 360px;
+    
+
+
+    }
+
+    .judul_lower p{
+
+        color: #555;
+        background-color:cadetblue;
+
+        width: 360px;
+    }
+
+    .hubungi{
+        font-size: 1rem;
+        background-color: #1E419D;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .hubungi:hover{
+        background-color: #15317a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .show{
@@ -452,9 +786,10 @@ input:focus{
 }
 
 
-.produk {
+.halaman {
     transition: opacity 0.1s ease, visibility 0.1s ease;
     height: 180vh;
+    
 }
 
 
