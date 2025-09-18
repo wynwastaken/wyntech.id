@@ -393,10 +393,13 @@ h1{
 
 
 .kotak_tanya{
-    background-color: coral;
+
+    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
     width: 48rem;
 }
 
@@ -419,14 +422,14 @@ h1{
 }
 
 .jawaban {
-    overflow: hidden;
-    opacity: 0;
+    
+    opacity: 1;
     transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
     padding: 0 16px;
     background: rgba(255,255,255,0.9);
     border-radius: 4px;
- 
-    width: 59.5%;
+    
+    width: 99%;
     color: #111;
 }
 
@@ -437,8 +440,8 @@ h1{
 
 .garis{
     border-bottom: 2px solid black;
-    width: 50rem;
-    background-color: rgb(0, 255, 255);
+    width: 100%;
+    
     padding-top: 10px;
 }
 
@@ -446,16 +449,28 @@ h1{
     box-shadow: gray;
 }
 
-.kotak_tanya.open .arrow{
+.kotak_tanya_isi{
+  overflow: hidden;
+  height: 7vh;
+}
+
+.terbuka{
+  height: 20vh;
+}
+
+.arrow_flip{
     transform: rotate(180deg);
 }
 
-.kotak_tanya.open + .jawaban{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    opacity: 1;
-    max-height: 400px;
+.kotak_tanya_atas{
+  display: flex;
+  flex-direction: row;
+  background-color: coral;
+  width: 100%;
+  justify-content: space-between;
 }
+
+
       
 /*3====================D*/
 
@@ -721,17 +736,7 @@ h1{
         transition: transform 0.25s ease;
     }
 
-    .jawaban {
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
-        padding: 0 16px;
-        background: rgba(255,255,255,0.9);
-        border-radius: 4px;
- 
-        width: 78.5%;
-        color: #111;
-    }
+    
 
     .jawaban p { 
         margin: 10px 0; 
@@ -749,7 +754,7 @@ h1{
         box-shadow: gray;
     }
 
-    .kotak_tanya.open .arrow{
+    .open_arrow{
         transform: rotate(180deg);
     }
 
