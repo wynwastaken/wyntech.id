@@ -4,6 +4,9 @@ body{
     background-attachment: fixed;
     
 }
+a{
+  text-decoration: none;
+}
 
 
 .head{
@@ -46,6 +49,9 @@ body{
 
 .nav{
     text-shadow: 2px 4px 1px black;
+    text-decoration: none;
+    color: white;
+    
 }
 .sign-in{
     display: flex;
@@ -77,6 +83,18 @@ body{
     display: none;
     
     
+}
+
+
+
+.nav:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.nav:active{
+  color: white;
+  text-decoration: none;
 }
 
 .menu-bar{
