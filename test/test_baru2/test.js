@@ -91,15 +91,5 @@ kotakList.forEach(kotak => {
 
 
 
-=
-
-hamburger.addEventListener('click',function(){
-    if(menu_bar.classList.contains('show')){
-        menu_bar.classList.remove('show');
-    }else{
-        menu_bar.classList.add('show');
-    }
-    
-});
 
 
