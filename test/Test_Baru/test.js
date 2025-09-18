@@ -1,97 +1,42 @@
 
 const kotakList = document.querySelectorAll('.kotak_tanya');
-
+const kotakList_isi = document.querySelectorAll('.kotak_tanya_isi');
+const jawabans = document.querySelectorAll('.jawaban');
+const KotakArrowList = document.querySelectorAll('.arrow');
 
 const menu_bar = document.querySelector('.menu-bar');
 const hamburger = document.querySelector('.hamburger');
 
 
 //dapetin smua elemen jawaban yg dii class kotak_tanya
-function getJawabanFor(kotak){
-    const next = kotak.nextElementSibling;
-
-    if(next !== null && next.classList.contains('jawaban')){
-        return next;
-    }
-    else{
-        return null;
-    }
-}
 
 //3===================================D
 
-function closeKotak(kotak){
-    const jawaban = getJawabanFor(kotak);
-    kotak.classList.remove('open');
-    kotak.setAttribute('aria-expanded', 'false');
-    
-    //animasi tutup
-    if(jawaban){
-        jawaban.style.maxHeight = '0px'; //biar balik ke posisi nutup
-        jawaban.style.opacity = '0';//biar ada transisi ngilang dikit
-    }
-}
 
-function openKotak(kotak){
-    const jawaban = getJawabanFor(kotak);
-    kotak.classList.add('open');
-    kotak.setAttribute('aria-expended', 'true');
-
-    if(jawaban){
-
-        jawaban.style.maxHeight = '0px';
-
-        requestAnimationFrame(() => {
-            jawaban.style.maxHeight = jawaban.scrollHeight + 'px';
-            jawaban.style.opacity = '1';
-        });
-
-    }
-}
 
 //3===================================D
 
-function toggleKotak(kotak){
-    const isOpen = kotak.classList.contains('open');
-
-    //biar yg lain nutup
-    kotakList.forEach(k => {
-      if (k !== kotak) closeKotak(k);
-    });
-
-    if(isOpen){
-        closeKotak(kotak);
-    }else{
-        openKotak(kotak);
-    }
-}
 
 //3===================================D
 
-kotakList.forEach(kotak => {
-
-    const jawaban = getJawabanFor(kotak);
-    
-    if(jawaban){
-        jawaban.style.maxHeight = '0px';
-        jawaban.style.opacity = '0';
-    }
-
-    kotak.addEventListener('click', (e) =>{
-        toggleKotak(kotak);
+KotakArrowList.forEach((arrow,index)=> {
+    arrow.addEventListener('click',function(){
+        if(arrow.classList.contains("arrow_flip")){
+            arrow.classList.remove("arrow_flip");
+            kotakList_isi[index].classList.remove("terbuka");
+        }else{
+            KotakArrowList.forEach((arrow,index) =>{
+            if(arrow.classList.contains("arrow_flip")){
+                KotakArrowList[index].classList.remove("arrow_flip");
+                kotakList_isi[index].classList.remove("terbuka");
+                }
+            })
+            arrow.classList.add("arrow_flip");
+            kotakList_isi[index].classList.add("terbuka");
+        }
     })
-
 })
 
-
-
-
-
-
-
-
-
-=
 
 hamburger.addEventListener('click',function(){
     if(menu_bar.classList.contains('show')){
