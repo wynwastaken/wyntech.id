@@ -149,11 +149,11 @@ show.forEach(function(el){
     if(input_password.type === "password"){
         input_password.type = "text";
         input_password2.type = "text";
-        el.src = "unshow.png";
+        el.src = "../unshow.png";
     }else{
         input_password.type = "password";
         input_password2.type = "password";
-        el.src = "show.png";
+        el.src = "../show.png";
     }
     })
 });
