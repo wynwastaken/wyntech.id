@@ -327,6 +327,52 @@ input:focus{
   top: 20px;
 }
 
+/*3======================D*/
+
+.halaman-produk{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #000000;
+    margin: 0;
+    
+    height: 86.5vh;
+
+}
+
+h1{
+    margin: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    padding-top: 40px;
+    font-family: 'Lilita One';
+
+
+}
+
+
+.judul{
+    font-size:2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    
+}
+
+
+.garis_awal{
+    
+    border-bottom: 2px solid black;
+    width: 60rem;
+
+    padding-top: 1px;
+}
+
+
 .isi{
     padding-top: 50px;
 }
@@ -336,28 +382,26 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    background-color: rgb(0, 74, 74);
+
 }
 
 
 .kotak_tanya{
-    background-color: coral;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 48rem;
+    font-family: 'Lilita One';
 }
 
 .tanya{
     font-size:x-large;
-    font-family:Arial, Helvetica, sans-serif;
     font-weight:bold
 }
 
 
 .arrow{
-    background-color: cornflowerblue;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -372,9 +416,9 @@ input:focus{
     opacity: 0;
     transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
     padding: 0 16px;
-    background: rgba(255,255,255,0.9);
+    
     border-radius: 4px;
- 
+    font-family: 'Lilita One';
     width: 59.5%;
     color: #111;
 }
@@ -387,7 +431,6 @@ input:focus{
 .garis{
     border-bottom: 2px solid black;
     width: 50rem;
-    background-color: rgb(0, 255, 255);
     padding-top: 10px;
 }
 
@@ -417,11 +460,11 @@ input:focus{
 
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: gray;
+
 }
 
 .isi_lower{
-    background-color: bisque;
+    background-color: rgb(110, 110, 110);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,9 +485,9 @@ input:focus{
 .judul_lower h3{
 
     color: #1E419D;
-    background-color:cadetblue;
+
     margin-bottom: 0.5rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Lilita One';
     font-size:x-large;
     
     
@@ -456,10 +499,11 @@ input:focus{
 
 .judul_lower p{
 
-    color: #555;
-    background-color:cadetblue;
+    color: #ffffff;
+
     font-size:smaller;
     width: 360px;
+    font-family: 'Lilita One';
 }
 
 .hubungi{
@@ -472,6 +516,7 @@ input:focus{
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Lilita One';
 }
 
 .hubungi:hover{
@@ -600,9 +645,8 @@ input:focus{
     
         text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
         padding-top: 40px;
-        font-family:Arial, Helvetica, sans-serif;
 
-        background-color: rgb(62, 121, 121);
+    
     }
 
 
@@ -610,6 +654,7 @@ input:focus{
         font-size: 2rem;
         margin-bottom: 1rem;
         color: #000000;
+        font-family: 'Lilita One';
     }
 
 
@@ -617,15 +662,59 @@ input:focus{
     
         border-bottom: 2px solid black;
         width: 22rem;
-        background-color: rgb(0, 255, 255);
+      
         padding-top: 1px;
     }
 
 /*3===============================D*/
 
-    .isi{
-        width: 30vh;
+    .halaman-produk{
+        display: flex;
+        flex-direction: column;
+    
       
+
+        margin: 0;
+
+    
+    
+        height: 86.5vh;
+    }
+
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        padding-top: 40px;
+        font-family: 'Lilita One';
+
+       
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+       
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+       
+        padding-top: 1px;
+    }
+
+    .isi{
         padding-top: 50px;
     }
 
@@ -634,28 +723,28 @@ input:focus{
         display: flex;
         flex-direction: column;
         align-items: center;
-      
-        background-color: rgb(0, 74, 74);
+        
+        
     }
 
 
     .kotak_tanya{
-        background-color: coral;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width:7vh;
+        width: 20rem;
     }
 
     .tanya{
         font-size:x-large;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Lilita One';
         font-weight:bold
     }
 
 
     .arrow{
-        background-color: cornflowerblue;
+       
         border: none;
         cursor: pointer;
         font-size: 20px;
@@ -670,22 +759,23 @@ input:focus{
         opacity: 0;
         transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
         padding: 0 16px;
-        background: rgba(255,255,255,0.9);
+        
         border-radius: 4px;
- 
-        width: 78.5%;
+        
+        width: 80.5%;
         color: #111;
     }
 
     .jawaban p { 
         margin: 10px 0; 
         line-height: 1.6; 
+        font-family: 'Lilita One';
     }
 
     .garis{
         border-bottom: 2px solid black;
         width: 20rem;
-        background-color: rgb(0, 255, 255);
+       
         padding-top: 10px;
     }
 
@@ -715,29 +805,34 @@ input:focus{
 
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: gray;
+        
     }
 
     .isi_lower{
-        background-color: bisque;
+        background-color: rgb(110, 110, 110);
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 8px;
         text-align: center;
+        font-family: 'Lilita One';
     
         padding-bottom: 20px;
         width: 90%;
     }
 
-
+/* .judul_lower{
+    font-size:x-large;
+    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+} */
 
     .judul_lower h3{
 
         color: #1E419D;
-        background-color:cadetblue;
+        
         margin-bottom: 0.5rem;
-        font-family:Arial, Helvetica, sans-serif;
         font-size:x-large;
     
     
@@ -749,8 +844,7 @@ input:focus{
 
     .judul_lower p{
 
-        color: #555;
-        background-color:cadetblue;
+        color: #ffffff;
 
         width: 360px;
     }
@@ -765,6 +859,7 @@ input:focus{
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
+        
     }
 
     .hubungi:hover{
@@ -772,6 +867,7 @@ input:focus{
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
 }
 
 .show{
