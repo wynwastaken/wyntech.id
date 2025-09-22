@@ -4,17 +4,18 @@ body{
 
 .sign-in-page{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  visibility: visible;
   background-image: url("bg.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
-  opacity: 1;
-  transition: opacity 0.1s ease;
+  
+  overflow: hidden;
   user-select: none;
 }
+
 
 .sign-in-form,.sign-up-form{
 
@@ -26,6 +27,7 @@ body{
   
 }
 
+
 .form,.form2{
   display: flex;
   flex-direction: column;
@@ -35,6 +37,28 @@ body{
   height: 100%;
   width: 100%;
 
+}
+#length-passwordl,#required-emaill,#required-emaill2{
+  
+  font-size: 2vh;
+  color: red;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  
+}
+
+#length-passwordl2,#required-usernamel2{
+  
+  font-size: 2vh;
+  color: red;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+#length-passwordl2{
+  margin-bottom: 10px;
 }
 
 #email,#email2,#password,#username2,#password2{
@@ -131,28 +155,7 @@ input:focus{
 
 
 
-#length-passwordl,#required-emaill,#required-emaill2{
-  
-  font-size: 2vh;
-  color: red;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  
-}
 
-#length-passwordl2,#required-usernamel2{
-  
-  font-size: 2vh;
-  color: red;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-#length-passwordl2{
-  margin-bottom: 10px;
-}
 #required-usernamel.muncul2{
   visibility:visible;
   opacity: 1;
@@ -205,13 +208,15 @@ input:focus{
 }
 
 
-
 .sign-up-form{
+  position: absolute;
   
-  display: none;
   
-  transition: opacity 1s ease-out;
-  
+  transition: visibility 2s ease;
+}
+
+switch{
+  visibility: hidden;
 }
 .back1{
   position: relative;

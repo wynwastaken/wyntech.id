@@ -348,7 +348,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
     padding-top: 40px;
     font-family: 'Lilita One';
 
@@ -403,10 +403,12 @@ h1{
 
 .arrow{
     border: none;
+  
     cursor: pointer;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
+    
+    height: 57px;
+    width: 55px;
+    font-size: 50px;
     border-radius: 999px;
     transition: transform 0.25s ease;
 }
@@ -464,7 +466,7 @@ h1{
 }
 
 .isi_lower{
-    background-color: rgb(110, 110, 110);
+    background-color:#1E419D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,7 +486,7 @@ h1{
 
 .judul_lower h3{
 
-    color: #1E419D;
+    color: #ffffff;
 
     margin-bottom: 0.5rem;
     font-family: 'Lilita One';
@@ -508,8 +510,8 @@ h1{
 
 .hubungi{
     font-size: 1rem;
-    background-color: #1E419D;
-    color: white;
+    background-color: white;
+    color: #1E419D;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -520,7 +522,7 @@ h1{
 }
 
 .hubungi:hover{
-    background-color: #15317a;
+    
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -643,7 +645,6 @@ h1{
         flex-direction: column;
         align-items: center;
     
-        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
         padding-top: 40px;
 
     
@@ -672,8 +673,6 @@ h1{
         display: flex;
         flex-direction: column;
     
-      
-
         margin: 0;
 
     
@@ -689,8 +688,7 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  
         padding-top: 40px;
         font-family: 'Lilita One';
 
@@ -747,9 +745,9 @@ h1{
        
         border: none;
         cursor: pointer;
-        font-size: 20px;
-        height: 40px;
-        width: 40px;
+        height: 57px;
+        width: 55px;
+        font-size: 50px;
         border-radius: 999px;
         transition: transform 0.25s ease;
     }
@@ -809,7 +807,7 @@ h1{
     }
 
     .isi_lower{
-        background-color: rgb(110, 110, 110);
+        background-color: #1E419D;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -830,7 +828,7 @@ h1{
 
     .judul_lower h3{
 
-        color: #1E419D;
+        color: #ffffff;
         
         margin-bottom: 0.5rem;
         font-size:x-large;
@@ -851,8 +849,8 @@ h1{
 
     .hubungi{
         font-size: 1rem;
-        background-color: #1E419D;
-        color: white;
+        background-color: #ffffff;
+        color: #1E419D;;
         border: none;
         padding: 12px 24px;
         border-radius: 8px;
@@ -863,7 +861,7 @@ h1{
     }
 
     .hubungi:hover{
-        background-color: #15317a;
+        
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
