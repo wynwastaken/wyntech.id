@@ -25,6 +25,7 @@ body{
   height: 62%;
   border-radius: 4px;
   
+  
 }
 
 
@@ -37,6 +38,45 @@ body{
   height: 100%;
   width: 100%;
 
+}
+#password.warning,#username.warning,#email.warning,#email2.warning{
+  border: 2px solid red;
+}
+
+#password2.warning,#username2.warning{
+  border: 2px solid red;
+}
+#required-usernamel.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#required-emaill.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#required-emaill2.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#length-passwordl.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  
+}
+
+#required-usernamel2.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#length-passwordl2.muncul2{
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 #length-passwordl,#required-emaill,#required-emaill2{
   
@@ -80,13 +120,7 @@ body{
 input:focus{
   outline: none;
 }
-#password.warning,#username.warning,#email.warning,#email2.warning{
-  border: 2px solid red;
-}
 
-#password2.warning,#username2.warning{
-  border: 2px solid red;
-}
 
 .form-input{
   display: flex;
@@ -156,40 +190,6 @@ input:focus{
 
 
 
-#required-usernamel.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-#required-emaill.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-#required-emaill2.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-#length-passwordl.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  
-}
-
-#required-usernamel2.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-#length-passwordl2.muncul2{
-  visibility:visible;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  
-}
-
 .show-icon{
   padding-top:6.1px;
   padding-bottom: 6px;
@@ -212,11 +212,12 @@ input:focus{
   position: absolute;
   
   
-  transition: visibility 2s ease;
+  
 }
 
-switch{
+.switch{
   visibility: hidden;
+  
 }
 .back1{
   position: relative;
