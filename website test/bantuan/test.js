@@ -71,7 +71,6 @@ buttons.forEach(function(el){
 return_arrow1.addEventListener('click',function(){
     container_scroll_up.classList.remove('hilang-smooth');
     isScrollListenerActive = true;
-    sign_in_page.classList.remove('muncul');
     document.body.style.overflowY = 'auto'; 
     setTimeout(function() {
         menu_produk.classList.remove('hilang');
