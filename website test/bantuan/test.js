@@ -41,6 +41,9 @@ window.addEventListener('scroll',function (){
     }
 });
 
+
+
+
 scroll_up.addEventListener('click',function(){
     if(!scroll_up.classList.contains('hilang-smooth')){
         window.scrollTo({

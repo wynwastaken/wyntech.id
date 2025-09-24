@@ -8,11 +8,8 @@ a{
   text-decoration: none;
 }
 
-
 .head{
     display: flex;
-    position: sticky;
-    top: 0;
     flex-direction:row;
     align-items: center;
     background-color: #1E419D;
@@ -24,6 +21,12 @@ a{
     user-select: none;
     transition: opacity 0.1s ease;
 }
+.head-menu{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    
+  }
 
 .wf-logo{
     position: relative;
