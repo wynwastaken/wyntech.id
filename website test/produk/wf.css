@@ -360,6 +360,7 @@ h1{
 
 
 .judul{
+    user-select: none;
     font-size:2.5rem;
     margin-bottom: 1rem;
     color: #000000;
@@ -392,7 +393,7 @@ h1{
 
 
 .kotak_tanya{
-
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -419,6 +420,7 @@ h1{
 }
 
 .jawaban {
+    user-select: none;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
@@ -719,6 +721,7 @@ h1{
 
     .isi{
         padding-top: 50px;
+        
     }
 
 
