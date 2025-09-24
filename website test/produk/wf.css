@@ -377,8 +377,9 @@ h1{
 
 
 .isi{
-    padding-top: 50px;
-    
+  
+  padding-top: 50px;
+  
 }
 
 
@@ -823,12 +824,7 @@ h1{
         width: 90%;
     }
 
-/* .judul_lower{
-    font-size:x-large;
-    color: blue;
-    font-family:Arial, Helvetica, sans-serif;
-    outline: none;
-} */
+
 
     .judul_lower h3{
 
