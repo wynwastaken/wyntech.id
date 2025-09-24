@@ -1,7 +1,7 @@
 
 const hamburger = document.querySelector('.hamburger');
 const menu_bar = document.querySelector('.menu-bar');
-const menu_head = document.querySelector('.head-menu');
+
 
 const head = document.querySelector('.head');
 const click_audio = document.getElementById('click-sound-effect');
@@ -17,12 +17,11 @@ const container_scroll_up = document.querySelector('.container-scroll-up');
 let isScrollListenerActive = true;
 
 hamburger.addEventListener('click',function(){
-    if(menu_head.classList.contains('show')){
-        menu_head.classList.remove('show');
+    if(menu_bar.classList.contains('show')){
+        menu_bar.classList.remove('show');
     }else{
-        menu_head.classList.add('show');
+        menu_bar.classList.add('show');
     }
-    
 });
 
 
