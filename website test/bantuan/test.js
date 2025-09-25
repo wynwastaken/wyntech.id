@@ -5,10 +5,11 @@ const buttons = document.querySelectorAll('.button');
 const menu_produk = document.querySelector('.halaman');
 const already_have = document.querySelector('.cl2');
 
+
 const scroll_up = document.querySelector('.scroll-up');
 const container_scroll_up = document.querySelector('.container-scroll-up');
+const last_element = document.querySelector('.isi');
 
-let isScrollListenerActive = true;
 
 hamburger.addEventListener('click',function(){
     if(menu_bar.classList.contains('show')){
@@ -23,22 +24,22 @@ hamburger.addEventListener('click',function(){
 
 
 window.addEventListener('scroll',function (){
-    if(!isScrollListenerActive) return;
     
     const PositionWindow = window.scrollY;
-    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
+    const PositionScrollShow = last_element.offsetTop ;
     if(PositionWindow >= PositionScrollShow){
-        scroll_up.classList.remove('hilang-smooth');
+        scroll_up.classList.add('show2');
     }else{
-        scroll_up.classList.add('hilang-smooth');
+        scroll_up.classList.remove('show2');
     }
 });
 
 
 
 
+
 scroll_up.addEventListener('click',function(){
-    if(!scroll_up.classList.contains('hilang-smooth')){
+    if(scroll_up.classList.contains('show2')){
         window.scrollTo({
             top:0,
             behavior:'smooth'
