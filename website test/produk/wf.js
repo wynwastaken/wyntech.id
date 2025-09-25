@@ -14,6 +14,7 @@ const menu_produk = document.querySelector('.halaman');
 const scroll_up = document.querySelector('.scroll-up');
 const container_scroll_up = document.querySelector('.container-scroll-up');
 
+// const last_element = document.querySelector('.isi');
 let isScrollListenerActive = true;
 
 hamburger.addEventListener('click',function(){
@@ -27,17 +28,17 @@ hamburger.addEventListener('click',function(){
 
 
 
-window.addEventListener('scroll',function (){
-    if(!isScrollListenerActive) return;
+// window.addEventListener('scroll',function (){
     
-    const PositionWindow = window.scrollY;
-    const PositionScrollShow = menu_produk.getBoundingClientRect().bottom;
-    if(PositionWindow >= PositionScrollShow){
-        scroll_up.classList.remove('hilang-smooth');
-    }else{
-        scroll_up.classList.add('hilang-smooth');
-    }
-});
+//     const PositionWindow = window.scrollY;
+//     const PositionScrollShow = last_element.offsetTop ;
+//     if(PositionWindow >= PositionScrollShow){
+//         scroll_up.classList.add('show2');
+//     }else{
+//         scroll_up.classList.remove('show2');
+//     }
+// });
+
 
 scroll_up.addEventListener('click',function(){
     if(!scroll_up.classList.contains('hilang-smooth')){
