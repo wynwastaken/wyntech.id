@@ -781,10 +781,10 @@ h1{
        
         border: none;
         cursor: pointer;
-        height: 1vh;
-        width:1vh;
-        font-size: 50px;
-        border-radius: 999px;
+        height: 3.5vh;
+        width:3.5vh;
+        
+        
         transition: transform 0.25s ease;
         
     }
