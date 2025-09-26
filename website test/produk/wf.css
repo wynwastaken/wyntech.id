@@ -402,10 +402,10 @@ h1{
 .arrow{
     border: none;
     cursor: pointer;
-    height: 57px;
-    width: 55px;
-    font-size: 50px;
-    border-radius: 999px;
+    height: 4.5vh;
+    width: 4.5vh;
+    transform: rotate(-90deg);
+    border-radius: 10px;
     transition: transform 0.25s ease;
     
 }
@@ -439,7 +439,7 @@ h1{
 }
 
 .kotak_tanya.open .arrow{
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .kotak_tanya.open + .jawaban{
@@ -781,8 +781,8 @@ h1{
        
         border: none;
         cursor: pointer;
-        height: 57px;
-        width: 55px;
+        height: 1vh;
+        width:1vh;
         font-size: 50px;
         border-radius: 999px;
         transition: transform 0.25s ease;
