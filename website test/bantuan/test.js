@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const menu_bar = document.querySelector('.menu-bar');
-const click_audio = document.getElementById('click-sound-effect');
-const buttons = document.querySelectorAll('.button');
+
+
 const menu_produk = document.querySelector('.halaman');
 const already_have = document.querySelector('.cl2');
 
@@ -50,13 +50,6 @@ scroll_up.addEventListener('click',function(){
 
 
 
-click_audio.volume = 0.4;
-buttons.forEach(function(el){
-    el.addEventListener('mousedown',function(){
-        click_audio.currentTime = 0;
-        click_audio.play();
-    })
-});
 
 
 

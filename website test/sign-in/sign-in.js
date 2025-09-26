@@ -25,7 +25,7 @@ const warning_input_username = document.getElementById('required-usernamel2');
 const create_link = document.getElementById('createl');
 const login_link = document.querySelector('.cl2');
 
-const click_audio = document.getElementById('click-sound-effect');
+
 const buttons = document.querySelectorAll('.button');
 
 
@@ -77,13 +77,6 @@ login_link.addEventListener('click',function(){
 })
 
 
-click_audio.volume = 0.4;
-buttons.forEach(function(el){
-    el.addEventListener('click',function(){
-        click_audio.currentTime = 0;
-        click_audio.play();
-    })
-})
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 input_email.addEventListener('input',function(){
