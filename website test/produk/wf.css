@@ -556,7 +556,7 @@ h1{
   
 }
 
-@media (max-width: 900px) {
+@media (max-width: 715px) {
   .navs {
     visibility: hidden;   /* biar ga bisa diklik dan diliat */
     position: relative;   
