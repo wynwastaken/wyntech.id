@@ -267,17 +267,17 @@ input:focus{
     padding-bottom: 10px;
   }
   #email,#email2,#username2{
-    width: 40vh;
+    width: 40vw;
   }
   .password-input-toggle{
-    width: 42vh;
+    width: 42vw;
   }
   .back1{
     right: 120px;
   }
 
   #fpasswordl{
-    left: 10vh;
+    left: 70px;
   }
 
   .show-icon{
