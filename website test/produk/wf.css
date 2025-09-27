@@ -820,7 +820,7 @@ h1{
     }
 
     .kotak_tanya.open .arrow{
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 
     .kotak_tanya.open + .jawaban{
