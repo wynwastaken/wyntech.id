@@ -246,7 +246,7 @@ input:focus{
   transition: opacity 0.1s ease,visibility 0.1s ease;
 }
 
-@media (max-width:800px) {
+@media (max-width:500px) {
 
   .sign-in-page{
     height: 770px;
@@ -267,13 +267,13 @@ input:focus{
     padding-bottom: 10px;
   }
   #email,#email2,#username2{
-    width: 63vw;
+    width: 40vw;
   }
   .password-input-toggle{
-    width: 66vw;
+    width: 42vw;
   }
   .back1{
-    right: 120px;
+    right: 140px;
   }
 
   #fpasswordl{
@@ -281,6 +281,6 @@ input:focus{
   }
 
   .show-icon{
-    padding-bottom: 7.3px;
+    padding-bottom: 6.3px;
   }
 }
