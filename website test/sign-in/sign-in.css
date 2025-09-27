@@ -20,7 +20,7 @@ body{
 .sign-in-form,.sign-up-form{
 
   background-color: rgb(255,255,255,0.2);
-  border: 0.5px solid white;
+  border: 0.7px solid white;
   width: 70vh;
   height: 62%;
   border-radius: 4px;
@@ -246,3 +246,41 @@ input:focus{
   transition: opacity 0.1s ease,visibility 0.1s ease;
 }
 
+@media (max-width:900px) {
+
+  .sign-in-page{
+    height: 110vh;
+  }
+  .sign-in-form{
+    height: fit-content;
+    width: fit-content;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sign-up-form{
+    height: fit-content;
+    width: fit-content;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  #email,#email2,#username2{
+    width: 40vh;
+  }
+  .password-input-toggle{
+    width: 42vh;
+  }
+  .back1{
+    right: 120px;
+  }
+
+  #fpasswordl{
+    left: 10vh;
+  }
+
+  .show-icon{
+    padding-bottom: 6.7px;
+  }
+}
