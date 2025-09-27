@@ -246,7 +246,7 @@ input:focus{
   transition: opacity 0.1s ease,visibility 0.1s ease;
 }
 
-@media (max-width:900px) {
+@media (max-width:416px) {
 
   .sign-in-page{
     height: 110vh;
