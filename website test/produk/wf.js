@@ -20,11 +20,13 @@ const logout = document.querySelector('.logout-icon');
 // const last_element = document.querySelector('.isi');
 let isScrollListenerActive = true;
 
-if (logout) {
-    logout.addEventListener('click', () => {
-        window.location.href = "../logout.php";
-    });
+logout.forEach(function(el){
+    if (el) {
+        el.addEventListener('click', () => {
+            window.location.href = "../logout.php";
+        });
 }
+})
 hamburger.addEventListener('click',function(){
     if(menu_bar.classList.contains('show')){
         menu_bar.classList.remove('show');
