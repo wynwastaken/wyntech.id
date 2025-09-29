@@ -14,7 +14,7 @@ const menu_produk = document.querySelector('.halaman');
 const scroll_up = document.querySelector('.scroll-up');
 const container_scroll_up = document.querySelector('.container-scroll-up');
 
-const logout = document.querySelector('.logout-icon');
+const logout = document.querySelectorAll('.logout-icon');
 
 
 // const last_element = document.querySelector('.isi');
