@@ -142,11 +142,13 @@ body{
 }
 
 #password,#password2{
-  width: 40vh;
+  flex: 1;
   
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+
 
 input:focus{
   outline: none;
@@ -156,7 +158,8 @@ input:focus{
 .form-input{
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
+  
   
 }
 
@@ -236,6 +239,7 @@ input:focus{
 .password-input-toggle{
   display: flex;
   flex-direction: row;
+  width: 50vh;
 }
 
 
@@ -293,18 +297,23 @@ input:focus{
     height: fit-content;
     width: fit-content;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 10px;
   }
   #email,#email2,#username2{
-    width: 40vw;
+    width: 34vh;
   }
   .password-input-toggle{
-    width: 42vw;
+    
+    width: 34vh;
+  }
+
+  #password1,#password2{
+    flex: 1;
   }
   .back1{
-    right: 140px;
+    right: 120px;
   }
 
   #fpasswordl{
@@ -312,6 +321,7 @@ input:focus{
   }
 
   .show-icon{
-    padding-bottom: 6.3px;
+    padding-top: 6.6px;
+    padding-bottom: 6.6px;
   }
 }
