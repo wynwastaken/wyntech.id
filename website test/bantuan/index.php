@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +24,19 @@
                     <div class="nav">Keranjang</div>
                     <a href="../bantuan/" class="button"><div class="nav"> Bantuan</div></a>
                 </div>
-                    <a href="../sign-in">
-                        <div class="sign-in s1 button">Sign in</div>
+                    <?php if(!isset($_SESSION['user_id'])): ?>
+                    <a href="../sign-in" class="button">
+                        <div class="sign-in s1">Sign in</div>
                     </a>
+                    <?php elseif (isset($_SESSION['user_id'])): ?>
+                        <div class="right-nav">
+                            <div class="sign-in s1 profile">
+                                Hello , <?php echo $_SESSION['name'] ?>
+                                <img class = "profile-icon" src="../profile.png" alt="icon-profile">
+                            </div>
+                            <img class="logout-icon s1" src="../logout-icon.png" alt="exit">
+                        </div>
+                    <?php endif; ?>
                     <div class="hamburger button">☰</div>
             </div>
         

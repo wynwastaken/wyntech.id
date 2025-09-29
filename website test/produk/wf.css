@@ -9,6 +9,17 @@ a{
   text-decoration: none;
 }
 
+
+.profile-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.logout-icon{
+  width: 50px;
+  height: 50px;
+}
+
 .head{
     
     display: flex;
@@ -71,8 +82,26 @@ a{
     padding-left: 1vh;
     padding-right: 1vh;
     user-select: none;
-    min-width: 10vh;
+    
 }
+
+.profile{
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0;
+  gap: 5px;
+  margin-right: 0;
+}
+
+.right-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+
 .navs {
   display: flex;
   gap: 2rem;
@@ -331,6 +360,7 @@ input:focus{
   right: 180px;
   top: 20px;
 }
+
 
 /*3======================D*/
 
@@ -598,7 +628,8 @@ h1{
 
   }
   
-  .sign-in.s1{
+ 
+  .s1{
     display: none;
   }
 

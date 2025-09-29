@@ -10,6 +10,12 @@ const scroll_up = document.querySelector('.scroll-up');
 const container_scroll_up = document.querySelector('.container-scroll-up');
 const last_element = document.querySelector('.isi');
 
+const logout = document.querySelector('.logout-icon');
+if (logout) {
+    logout.addEventListener('click', () => {
+        window.location.href = "../logout.php";
+    });
+}
 
 hamburger.addEventListener('click',function(){
     if(menu_bar.classList.contains('show')){

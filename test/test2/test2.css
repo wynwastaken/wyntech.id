@@ -1,27 +1,31 @@
 
 
-.carousel{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    transition: transform 0.6s ease;
-    perspective: 1000px;
-    width: fit-content;
+
+
+.carousel-window{
+    overflow: hidden;
+    
+    width: 57vh;
     
 }
 
-.carousel img{
-    height: 40vh;
-
+.carousel{
+    display:flex;
+    flex-direction: row;
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 5vh;
+    transition: transform 0.5s ease;
 }
 
-.carousel-window{
-    height: 50vh;
-    width: 50vh;
-    overflow: hidden;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+.carousel-window img{
+    height:40vh ;
+    border: 2px solid black;
+    
 }
+
 

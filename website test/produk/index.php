@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +23,19 @@
                     <div class="nav">Keranjang</div>
                     <a href="../bantuan/" class="button"><div class="nav"> Bantuan</div></a>
                 </div>
-                <a href="../sign-in" class="button">
-                    <div class="sign-in s1">Sign in</div>
-                </a>
+                <?php if(!isset($_SESSION['user_id'])): ?>
+                    <a href="../sign-in" class="button">
+                        <div class="sign-in s1">Sign in</div>
+                    </a>
+                <?php elseif (isset($_SESSION['user_id'])): ?>
+                    <div class="right-nav">
+                        <div class="sign-in s1 profile">
+                            Hello , <?php echo $_SESSION['name'] ?>
+                            <img class = "profile-icon" src="../profile.png" alt="icon-profile">
+                        </div>
+                        <img class="logout-icon s1" src="../logout-icon.png" alt="exit">
+                    </div>
+                <?php endif; ?>
                 
                 <div class="hamburger button">☰</div>
             </div>
@@ -36,11 +47,23 @@
                     <div class="nav button">Pesanan</div>
                     <div class="nav button">Keranjang</div>
                     <a href="../bantuan/" class="button">
-                        <div class="nav button">Sign in</div>
+                        <div class="nav button">bantuan</div>
                     </a>
-                    <a href="../sign-in" class="button">
-                        <div class="sign-in s2 button">Sign in</div>
-                    </a>
+                    <?php if(!isset($_SESSION['user_id'])): ?>
+                        <a href="../sign-in" class="button">
+                            <div class="sign-in s2">Sign in</div>
+                        </a>
+                    <?php elseif (isset($_SESSION['user_id'])): ?>
+                        <div class="right-nav s2">
+                            <div class="sign-in s2 profile">
+                                Hello , <?php echo $_SESSION['name'] ?>
+                                <img class = "profile-icon" src="../profile.png" alt="icon-profile">
+                            </div>
+                            <img class="logout-icon" src="../logout-icon.png" alt="exit">
+                        </div>
+                
+            
+                    <?php endif; ?>
             </div>
         </div>
     </div>
