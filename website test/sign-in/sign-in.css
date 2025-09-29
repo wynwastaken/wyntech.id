@@ -225,20 +225,20 @@ input:focus{
 
 
 .show-icon{
-  padding-top:6.1px;
-  padding-bottom: 6.5px;
-  height: 4vh;
-  width: 10vh;
+  width: 50px;
+  height: 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: white;
-  
+  padding-bottom: 4px;
+  padding-top: 4px;
   
 }
 
 .password-input-toggle{
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 50vh;
 }
 
@@ -266,9 +266,7 @@ input:focus{
 }
 
 
-.show{
-  height: 330px;
-} 
+
 .muncul{
   display: flex;
   visibility: visible;
