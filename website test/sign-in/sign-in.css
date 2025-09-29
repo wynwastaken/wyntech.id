@@ -319,7 +319,6 @@ input:focus{
   }
 
   .show-icon{
-    padding-top: 6.6px;
-    padding-bottom: 6.6px;
+    padding: 5.2px;
   }
 }
