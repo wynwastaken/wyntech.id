@@ -2,15 +2,7 @@
     session_start();
     $udahlogin = false;
     $salahpass = false;
-    try{
-        $konek = new PDO('mysql:host=localhost;dbname=wyntech_id','root','',[
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]);
-        echo "<div class='status' style='color : green;'>Koneksi Berhasil</div>";
-    }catch(PDOException $e){
-        echo "<div class='status'>$e</div>";
-        exit();
-    }
+    require "konek.php";
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if(isset($_POST['sign-in'])){
             
@@ -68,18 +60,18 @@
                 
                 <h3 id="loginl">Login</h3>
                 <?php if(!$udahlogin && isset($_POST['sign-in'])):?>
-                    <div class="status_login" style = "visibility: <?php echo $salahpass?'visible':'hidden' ?>">
-                    <div >Wrong email or password</div>
-                    <img class = "fail-icon" src = "fail.png" alt="Wrong Credentials">
-            
-                </div>
+                    <div class="status_login s1" style = "visibility: <?php echo $salahpass?'visible':'hidden' ?>">
+                        <div >Wrong email or password</div>
+                        <img class = "fail-icon" src = "fail.png" alt="Wrong Credentials">
+                
+                    </div>
                 <?php endif; ?>
                     
                 
                 <div class="form-input fi1">
                     <label id = "emaill" for="email">Email</label>
                     <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
-                    <div id="required-emaill">email must be a valid email</div>
+                    <div id="required-emaill">Email must be a valid email</div>
                 </div>
                 <div class="form-input fi2">
                     <label id = "passwordl" for="password">Password</label>
@@ -120,7 +112,7 @@
 
                     <div class="password-input-toggle">
                         <input type="password" id="password2" placeholder="••••••••" name="password" required>
-                        <img class = "show-icon" src="../show.png" alt="show">
+                        <img class = "show-icon si2" src="../show.png" alt="show">
                     </div>
                     
                     <div id="length-passwordl2">Password must atleast be 8 Characters</div>

@@ -24,6 +24,7 @@ const warning_input_username = document.getElementById('required-usernamel2');
 
 const create_link = document.getElementById('createl');
 const login_link = document.querySelector('.cl2');
+const submit_sign_up = document.getElementById('nav-sign-up');
 
 
 const buttons = document.querySelectorAll('.button');
@@ -41,10 +42,12 @@ input_username.addEventListener('input',function(){
 
 shows_toggle.forEach(function(show){
     show.addEventListener('click',function(){
-    if(input_password.type === "password" || input_password.type === "password"){
+    if(input_password.type === "password" || input_password2.type === "password"){
+        show.src = "show.png"
         input_password.type = "text";
         input_password2.type = "text";
     }else{
+        show.src = "unshow.png";
         input_password.type = "password";
         input_password2.type = "password";
     }
@@ -87,19 +90,45 @@ input_email.addEventListener('input',function(){
         warning_input_email.classList.remove('muncul2');
         input_email.classList.remove("warning");
     }
-})
+});
+
 
 
 input_email2.addEventListener('input',function(){
     if(!emailRegex.test(input_email2.value.trim())){
         warning_input_email2.classList.add('muncul2');
         input_email2.classList.add("warning");
+        
+        
     }else{
         warning_input_email2.classList.remove('muncul2');
         input_email2.classList.remove("warning");
+        fetch("cekused.php",{
+        method:"POST",
+        body: new URLSearchParams({email:input_email2.value.trim().toLowerCase()})
+        }).then(function(balasan){
+            return balasan.text();
+        }).then(function(balasan){
+            console.log("balasan dari server",balasan);
+            if(balasan.trim() == "ada"){
+                warning_input_email2.textContent = "This email is already registered";
+                warning_input_email2.classList.add('muncul2');
+                input_email2.classList.add("warning");
+                submit_sign_up.disabled = true;
+            }else if(balasan.trim() == "tidak_ada"){
+                submit_sign_up.disabled = false;
+                warning_input_email2.textContent = "Email must be a valid email";
+                warning_input_email2.classList.remove('muncul2');
+                input_email2.classList.remove("warning");
+            }
+            
+        });
+        
 
     }
-})
+    
+});
+
 
 
 input_password.addEventListener('input',function(){
@@ -110,7 +139,7 @@ input_password.addEventListener('input',function(){
         warning_input_password.classList.remove('muncul2');
         input_password.classList.remove("warning");
     }
-})  
+});
 
 
 
@@ -122,6 +151,6 @@ input_password2.addEventListener('input',function(){
         warning_input_password2.classList.remove('muncul2');
         input_password2.classList.remove('warning');
     }
-})
+});
 
 

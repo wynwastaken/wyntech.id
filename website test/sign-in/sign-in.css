@@ -53,7 +53,7 @@ body{
   background-color: rgb(255,255,255,0.2);
   border: 0.7px solid white;
   width: 70vh;
-  height: 62%;
+  height: 60vh;
   border-radius: 4px;
   
   
@@ -201,7 +201,9 @@ input:focus{
 }
 #createl2{
   margin: 0;
-  margin-bottom: 15px;
+
+  width: fit-content;
+
 }
 
 #loginl{
@@ -225,21 +227,26 @@ input:focus{
 
 
 .show-icon{
-  width: 50px;
+  
+  width: 60px;
   height: 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: white;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-top:6.5px ;
+  padding-bottom: 6.6px;
   
+}
+.si2{
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .password-input-toggle{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50vh;
+  width: 51vh;
 }
 
 
@@ -304,7 +311,15 @@ input:focus{
   }
   .password-input-toggle{
     
-    width: 34vh;
+    width: 35vh;
+  }
+  .show-icon{
+    padding-top: 8px;
+    padding-bottom:8.3px ;
+  }
+  .si2{
+    padding-top: 8px;
+    padding-bottom:8.3px ;
   }
 
   #password1,#password2{
@@ -318,7 +333,5 @@ input:focus{
     left: 70px;
   }
 
-  .show-icon{
-    padding: 5.2px;
-  }
+  
 }
