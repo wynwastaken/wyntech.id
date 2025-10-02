@@ -26,6 +26,7 @@
             $nama = $_POST['username'];
             $email = $_POST['email'];
             $pass = $_POST['password'];
+            
 
             if($nama && $email && $pass){
                 $stmt = $konek->prepare("INSERT INTO wf_users(USERNAME,EMAIL,PASS) VALUES (:a,:b,:c)");
