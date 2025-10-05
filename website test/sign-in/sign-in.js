@@ -32,8 +32,10 @@ const buttons = document.querySelectorAll('.button');
 const form1 = document.querySelector('.form');
 const form2 = document.querySelector('.form2');
 
-let emailCorrect = false;
-let passwordCorrect = false;
+let emailCorrect1 = false;
+let passwordCorrect1 = false;
+let emailCorrect2 = false;
+let passwordCorrect2 = false;
 input_username.addEventListener('input',function(){
     if(!input_username.value.trim()){
         input_username.classList.add('warning');
@@ -93,7 +95,7 @@ input_email.addEventListener('input',function(){
     }else{
         warning_input_email.classList.remove('muncul2');
         input_email.classList.remove("warning");
-        emailCorrect = true;
+        emailCorrect1 = true;
     }
 });
 
@@ -125,7 +127,7 @@ input_email2.addEventListener('input',function(){
                 warning_input_email2.textContent = "Email must be a valid email";
                 warning_input_email2.classList.remove('muncul2');
                 input_email2.classList.remove("warning");
-                emailCorrect = true;
+                emailCorrect2 = true;
             }
             
         });
@@ -144,7 +146,7 @@ input_password.addEventListener('input',function(){
     }else{
         warning_input_password.classList.remove('muncul2');
         input_password.classList.remove("warning");
-        passwordCorrect = true;
+        passwordCorrect1 = true;
     }
 });
 
@@ -157,21 +159,22 @@ input_password2.addEventListener('input',function(){
     }else{
         warning_input_password2.classList.remove('muncul2');
         input_password2.classList.remove('warning');
-        passwordCorrect = true;
+        passwordCorrect2 = true;
     }
 });
 
 
 form1.addEventListener('submit',function(e){
     e.preventDefault();
-    if(emailCorrect && passwordCorrect){
+    if(emailCorrect1 && passwordCorrect1){
         form1.submit();
     }
 })
 
 form2.addEventListener('submit',function(e){
     e.preventDefault();
-    if(emailCorrect && passwordCorrect){
+    if(emailCorrect2 && passwordCorrect2){
         form2.submit();
     }
+    
 })
