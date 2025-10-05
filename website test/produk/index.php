@@ -1,8 +1,7 @@
-<?php session_start(); 
+<?php 
+    session_start(); 
 
-    $konek = new PDO('mysql:host=localhost;dbname=buku_tamu','root','',[
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-    ]);
+    require '../sign-in/konek.php';
 
     // ngambil kategori
     $category = 'all';
