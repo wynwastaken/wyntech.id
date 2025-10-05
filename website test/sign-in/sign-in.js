@@ -29,7 +29,11 @@ const submit_sign_up = document.getElementById('nav-sign-up');
 
 const buttons = document.querySelectorAll('.button');
 
+const form1 = document.querySelector('.form');
+const form2 = document.querySelector('.form2');
 
+let emailCorrect = false;
+let passwordCorrect = false;
 input_username.addEventListener('input',function(){
     if(!input_username.value.trim()){
         input_username.classList.add('warning');
@@ -89,6 +93,7 @@ input_email.addEventListener('input',function(){
     }else{
         warning_input_email.classList.remove('muncul2');
         input_email.classList.remove("warning");
+        emailCorrectCorrect = true;
     }
 });
 
@@ -114,12 +119,13 @@ input_email2.addEventListener('input',function(){
                 warning_input_email2.textContent = "This email is already registered";
                 warning_input_email2.classList.add('muncul2');
                 input_email2.classList.add("warning");
-                submit_sign_up.disabled = true;
+                
             }else if(balasan.trim() == "tidak_ada"){
                 submit_sign_up.disabled = false;
                 warning_input_email2.textContent = "Email must be a valid email";
                 warning_input_email2.classList.remove('muncul2');
                 input_email2.classList.remove("warning");
+                emailCorrectCorrect = true;
             }
             
         });
@@ -138,6 +144,7 @@ input_password.addEventListener('input',function(){
     }else{
         warning_input_password.classList.remove('muncul2');
         input_password.classList.remove("warning");
+        passwordCorrect = true;
     }
 });
 
@@ -150,7 +157,21 @@ input_password2.addEventListener('input',function(){
     }else{
         warning_input_password2.classList.remove('muncul2');
         input_password2.classList.remove('warning');
+        passwordCorrect = true;
     }
 });
 
 
+form1.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(emailCorrect && passwordCorrect){
+        form1.submit();
+    }
+})
+
+form2.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(emailCorrect && passwordCorrect){
+        form2.submit();
+    }
+})
