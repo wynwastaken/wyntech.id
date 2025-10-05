@@ -93,7 +93,7 @@ input_email.addEventListener('input',function(){
     }else{
         warning_input_email.classList.remove('muncul2');
         input_email.classList.remove("warning");
-        emailCorrectCorrect = true;
+        emailCorrect = true;
     }
 });
 
@@ -125,7 +125,7 @@ input_email2.addEventListener('input',function(){
                 warning_input_email2.textContent = "Email must be a valid email";
                 warning_input_email2.classList.remove('muncul2');
                 input_email2.classList.remove("warning");
-                emailCorrectCorrect = true;
+                emailCorrect = true;
             }
             
         });
