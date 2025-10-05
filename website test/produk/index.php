@@ -5,13 +5,11 @@
 
     // ngambil kategori
     $category = 'all';
-    if (!empty($_POST['category'])) $category = trim($_POST['category']);
-    elseif (!empty($_GET['category'])) $category = trim($_GET['category']);
+    if (!empty($_GET['category'])) $category = trim($_GET['category']);
 
     // ngambil search
     $search = '';
-    if (!empty($_POST['search'])) $search = trim($_POST['search']);
-    elseif (!empty($_GET['search'])) $search = trim($_GET['search']);
+    if (!empty($_GET['search'])) $search = trim($_GET['search']);
 
     
     $allowed = ['all','topup','voucher','robux'];
@@ -137,7 +135,7 @@
                         </button>
 
 
-                        <form method="POST">
+                        <form method="GET">
                             <ul class="dropdown-menu" id="ddMenu" role="menu" tabindex="-1" aria-label="Kategori">
                                 <li class="dropdown-item <?php if($category==='all') echo 'active'; ?>" data-cat="all" tabindex="0">
                                     <button type="submit" name="category" value="all">All</button>
@@ -157,9 +155,9 @@
                     </div>
                     
                 
-                    <form method="POST" id="searchForm">
+                    <form method="GET" id="searchForm">
                        
-                        <input type="hidden" name="category" value="<?php echo ($category); ?>">
+                        
                         
                         <div class="kotak_search">
                             <img src="icon_search.png" alt="Search" class="search-icon">
