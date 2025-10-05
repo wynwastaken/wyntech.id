@@ -915,7 +915,7 @@ h1{
     .hubungi{
         font-size: 1rem;
         background-color: #ffffff;
-        color: #1E419D;;
+        color: #1E419D;
         border: none;
         padding: 12px 24px;
         border-radius: 8px;
@@ -1050,7 +1050,7 @@ h1{
   height: 100%;
   width: 100%;
   border-radius: 12px;
-  background: #303f6b;
+  background: #1E419D;
   color: #fff;
   font-weight: 700;
   border: none;
@@ -1058,7 +1058,7 @@ h1{
 
 }
 
-.selected-category
+
 
 .dropdown-toggle .chev { 
   font-size: 18px; 
@@ -1209,7 +1209,7 @@ h1{
 
 
 .selected-category {
-  color:#f1f5ff;
+  color:#1E419D;
   padding: 6px 12px;
   border-radius: 999px;
   box-shadow:#111;
