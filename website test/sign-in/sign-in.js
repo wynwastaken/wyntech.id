@@ -169,16 +169,16 @@ input_password2.addEventListener('input',function(){
 
 
 form1.addEventListener('submit',function(e){
-    e.preventDefault();
+    
     if(emailCorrect1 && passwordCorrect1){
-        form1.submit();
+        e.preventDefault();
     }
 })
 
 form2.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(emailCorrect2 && passwordCorrect2){
-        form2.submit();
+    
+    if(!emailCorrect2 && !passwordCorrect2){
+        e.preventDefault();
     }
     
 })
