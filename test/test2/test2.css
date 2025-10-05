@@ -22,13 +22,42 @@
     transition: transform 0.5s ease;
 }
 
+
 .carousel-window .card{
-    width: 57vh;
-    height: 30vh;
+    width: 50vh;
+    height: 80vh;
     background:wheat;
     border-radius: 18px;
     border: 1px solid gainsboro;
     
 }
+.garis_sidebar{
+    display: flex;
+    
+    border-radius: 6px;
+}
 
+.garis_sidebar .dot{
+    width: 48px;
+    height: 8px;
+    
+    border: 0.5px solid black;
+    background:gray
+}
+
+.d1{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.d3{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.iklan{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
 

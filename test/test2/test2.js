@@ -6,8 +6,11 @@ const carousel_movable = document.querySelector('.carousel');
 const lebar_elemen = carousel_element[0].offsetWidth;
 const gap_antar_elemen = parseInt(getComputedStyle(carousel_movable).gap);
 const size_geser = lebar_elemen + gap_antar_elemen;
+const dots = document.querySelectorAll('.dot');
 let index = 0;
+
 function slide(){
+  
   if(index >= carousel_element.length){
     index = 0;
     carousel_movable.style.transition = 'none'; 
@@ -15,7 +18,18 @@ function slide(){
     setTimeout(function(){
       carousel_movable.style.transition = 'transform 0.5s ease';
     },200);
-  };
+    dots.forEach(function(dot){
+      dot.style.backgroundColor = 'gray';
+    })
+    dots[0].style.backgroundColor = 'white';
+    
+  }
+  if(index>0){
+    dots[index-1].style.backgroundColor = 'gray';
+    dots[index].style.backgroundColor = 'white';
+  }
+  
+  
   const nilai_geser = -index * size_geser;
   carousel_movable.style.transform = `translateX(${nilai_geser}px)`;
   index++;
