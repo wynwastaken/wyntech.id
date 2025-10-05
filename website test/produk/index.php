@@ -51,8 +51,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="halaman">
+    <div class="halaman" >
         <div class="head-menu">
             <div class="head">
                 <img class="wf-logo" src="../wf-logo.png" alt="wfdigistore logo">
