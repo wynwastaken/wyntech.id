@@ -92,6 +92,7 @@ input_email.addEventListener('input',function(){
     if(!emailRegex.test(input_email.value.trim())){
         warning_input_email.classList.add('muncul2');
         input_email.classList.add("warning");
+        emailCorrect1 = false;
     }else{
         warning_input_email.classList.remove('muncul2');
         input_email.classList.remove("warning");
@@ -105,7 +106,7 @@ input_email2.addEventListener('input',function(){
     if(!emailRegex.test(input_email2.value.trim())){
         warning_input_email2.classList.add('muncul2');
         input_email2.classList.add("warning");
-        
+        emailCorrect2 = false;
         
     }else{
         warning_input_email2.classList.remove('muncul2');
@@ -121,6 +122,7 @@ input_email2.addEventListener('input',function(){
                 warning_input_email2.textContent = "This email is already registered";
                 warning_input_email2.classList.add('muncul2');
                 input_email2.classList.add("warning");
+                emailCorrect2 = false;
                 
             }else if(balasan.trim() == "tidak_ada"){
                 submit_sign_up.disabled = false;
@@ -143,6 +145,7 @@ input_password.addEventListener('input',function(){
     if(!input_password.value.trim() || input_password.value.trim().length < 8){
         warning_input_password.classList.add('muncul2');
         input_password.classList.add("warning");
+        passwordCorrect1 = false;
     }else{
         warning_input_password.classList.remove('muncul2');
         input_password.classList.remove("warning");
@@ -156,6 +159,7 @@ input_password2.addEventListener('input',function(){
     if(!input_password2.value.trim() || input_password2.value.trim().length < 8){
         warning_input_password2.classList.add('muncul2');
         input_password2.classList.add('warning');
+        passwordCorrect2 = false;
     }else{
         warning_input_password2.classList.remove('muncul2');
         input_password2.classList.remove('warning');
