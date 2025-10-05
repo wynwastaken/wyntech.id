@@ -971,3 +971,246 @@ h1{
     visibility: visible;
     transition:  transform 1s ease, visibility 0.1s ease;
 }
+
+
+/*3=====================================================D*/
+
+
+
+.hal_utama{
+    padding: 0 12px;
+}
+
+.layout{
+    
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    
+}
+
+.isi_sidebar{
+    width: 220px;
+    height: 500px;
+    background:#e6e9ee;
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+}
+
+.garis_sidebar{
+    display: flex;
+    gap:8px;
+    border-radius: 6px;
+}
+
+.garis_sidebar .dot{
+    width: 48px;
+    height: 8px;
+    border-radius: 6px;
+    background:gray
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+
+}
+
+.kotak_t_d{
+
+  display: flex;
+  gap: 250px;
+}
+
+/*3==================================================================================================D*/
+
+
+.luar_drop { 
+  position: relative;
+  display: inline-block; 
+  width: 180px;
+  height: 40px;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background: #303f6b;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+
+}
+
+.selected-category
+
+.dropdown-toggle .chev { 
+  font-size: 18px; 
+  transform: translateY(1px); 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: #111;
+  list-style: none;
+  padding: 8px 6px;
+  margin: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.luar_drop.open .dropdown-menu { 
+  display: block; 
+}
+
+.dropdown-menu .dropdown-item button {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 14px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.dropdown-item:hover {
+  background: #f1f5ff;
+  outline: none;
+}
+
+.dropdown-item.active {
+  background: #1e3f97;
+  color: #fff;
+}
+
+.luar_drop { 
+  margin: auto; 
+}
+
+
+
+/*3==================================================================================================D*/
+
+
+
+
+.kotak_search{
+    width: 500px;
+    height: 15px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-shadow:#111;
+    background-color: white;
+}
+
+.search-icon {
+    width: 20px;     
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.luar_kotak_produk{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    padding-top: 8px;
+}
+
+.kotak_produk{
+    border-radius: 12px;
+    padding: 18px;
+    margin: auto;
+    text-align:center;
+    transition: transform .14s ease, box-shadow .14s ease;
+    background-color: azure;
+}
+
+.kotak_produk:hover{
+    transform: translateY(-6px);
+    box-shadow: #111;
+}
+
+.gambar_produk{
+    width: 150px;
+    height: 150px;
+    background: #e6e9ee;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+}
+
+.nama_produk{
+    font-weight: 700;
+    margin-top:6px;
+}
+
+
+
+.img-produk{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*3===================================================================================D*/
+
+.selected-wrap {
+  margin-top: 5px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-family: 'Lilita One', Arial, sans-serif;
+  color: #333;
+  border-bottom: 1px solid black;
+
+}
+
+
+.selected-category {
+  color:#f1f5ff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow:#111;
+}
