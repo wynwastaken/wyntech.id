@@ -997,7 +997,8 @@ h1{
 .carousel-window{
     overflow: hidden;
     
-    width: 45vh;
+    width: 35vh;
+    
     
 }
 
@@ -1015,8 +1016,8 @@ h1{
 
 
 .carousel-window .card{
-    width: 50vh;
-    height: 80vh;
+    width: 30vh;
+    height: 70vh;
     background:wheat;
     border-radius: 18px;
     border: 1px solid gainsboro;
@@ -1033,7 +1034,7 @@ h1{
     height: 8px;
     
     border: 0.5px solid black;
-    background:gray
+    background-color:gray;
 }
 
 .d1{
@@ -1047,9 +1048,14 @@ h1{
 
 .iklan{
     display: flex;
-    width: fit-content;
+    width: 40vh;
+    height: 90vh;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
+    
+    
 }
 
 
