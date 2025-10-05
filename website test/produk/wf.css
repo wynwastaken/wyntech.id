@@ -990,34 +990,69 @@ h1{
     align-items: start;
 }
 
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
+
+
+
+
+.carousel-window{
+    overflow: hidden;
+    
+    width: 45vh;
     
 }
 
-.isi_sidebar{
-    width: 220px;
-    height: 500px;
-    background:#e6e9ee;
-    border-radius: 18px;
-    border: 1px solid gainsboro;
+.carousel{
+    display:flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 5vh;
+    transition: transform 0.5s ease;
 }
 
+
+.carousel-window .card{
+    width: 50vh;
+    height: 80vh;
+    background:wheat;
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+    
+}
 .garis_sidebar{
     display: flex;
-    gap:8px;
+    
     border-radius: 6px;
 }
 
 .garis_sidebar .dot{
     width: 48px;
     height: 8px;
-    border-radius: 6px;
+    
+    border: 0.5px solid black;
     background:gray
 }
+
+.d1{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.d3{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.iklan{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 .content{
     display: flex;

@@ -109,18 +109,19 @@
     <div class="hal_utama">
         <div class="layout">
             
-            <div class="sidebar">
-
-                <div class="isi_sidebar">
-                    wawawad
+            <div class="iklan">
+                <div class="carousel-window">
+                    <div class="carousel">
+                        <img class = "card" src="img1.jpeg" alt="image-1">
+                        <img class = "card" src="img1.jpeg" alt="image-2">
+                        <img class = "card" src="img1.jpeg" alt="image-3">
+                    </div>
                 </div>
-
                 <div class="garis_sidebar">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+                    <div class="dot d1" style="background-color: white;"></div>
+                    <div class="dot d2"></div>
+                    <div class="dot d3"></div>
                 </div>
-
             </div>
 
     
