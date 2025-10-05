@@ -32,7 +32,7 @@
         $params[':search'] = '%' . $search . '%';
     }
 
-    $sql .= "ORDER BY id DESC";
+    $sql .= " ORDER BY id DESC";
 
     $stmt = $konek->prepare($sql);
     $stmt->execute($params);
