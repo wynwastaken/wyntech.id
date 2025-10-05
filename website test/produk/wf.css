@@ -1209,8 +1209,12 @@ h1{
 
 
 .selected-category {
-  color:#1E419D;
+  color:white;
   padding: 6px 12px;
   border-radius: 999px;
   box-shadow:#111;
+}
+
+.selected-wrap .selected-category{
+  color: #1E419D;
 }
