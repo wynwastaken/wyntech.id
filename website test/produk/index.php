@@ -143,13 +143,16 @@
                                     <button type="submit" name="category" value="all">All</button>
                                 </li>
                                 <li class="dropdown-item <?php if($category==='topup') echo 'active'; ?>" data-cat="topup" tabindex="0">
-                                    <button type="submit" name="category" value="topup">Topup</button>
+                                    <button type="submit" name="category" value="topup">Via Login</button>
                                 </li>
                                 <li class="dropdown-item <?php if($category==='voucher') echo 'active'; ?>" data-cat="voucher" tabindex="0">
                                     <button type="submit" name="category" value="voucher">Voucher</button>
                                 </li>
-                                <li class="dropdown-item <?php if($category==='robux') echo 'active'; ?>" data-cat="robux" tabindex="0">
-                                    <button type="submit" name="category" value="robux">Robux</button>
+                                <li class="dropdown-item <?php if($category==='games') echo 'active'; ?>" data-cat="games" tabindex="0">
+                                    <button type="submit" name="category" value="robux">Games</button>
+                                </li>
+                                <li class="dropdown-item <?php if($category==='akun') echo 'active'; ?>" data-cat="akun" tabindex="0">
+                                    <button type="submit" name="category" value="robux">Akun</button>
                                 </li>
                             </ul>
                         </form>
@@ -191,7 +194,7 @@
                                 <div class="gambar_produk">
                                     <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="img-produk">
                                 </div>
-                                <h3 class="nama_produk"><?php echo $each['nama_produk']; ?></h3>
+                                
                         </div>
                     <?php endforeach; ?>
                     
