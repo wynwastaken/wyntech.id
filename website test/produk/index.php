@@ -23,6 +23,7 @@
     } else {
         $sql = "SELECT * FROM produk WHERE kategori = :cat";
         $params[':cat'] = $category;
+        
     }
 
     if (!empty($search)) {
