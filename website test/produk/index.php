@@ -21,9 +21,9 @@
     $params = [];
     
     if ($category === 'all') {
-        $sql = "SELECT * FROM produk2 WHERE 1=1";
+        $sql = "SELECT * FROM produk WHERE 1=1";
     } else {
-        $sql = "SELECT * FROM produk2 WHERE kategori = :cat";
+        $sql = "SELECT * FROM produk WHERE kategori = :cat";
         $params[':cat'] = $category;
     }
 
@@ -32,7 +32,7 @@
         $params[':search'] = '%' . $search . '%';
     }
 
-    $sql .= " ORDER BY id DESC";
+    $sql .= "ORDER BY id DESC";
 
     $stmt = $konek->prepare($sql);
     $stmt->execute($params);
@@ -179,19 +179,11 @@
 
                 
 
-                <?php
-                        echo "<div>";
-                        print_r($_POST);
-                        echo "</div>"
-                ?>
-
+               
 
                 <div class="luar_kotak_produk">
                     
-                    <div class="kotak_produk">
-                        <div class="gambar_produk"></div>
-                        <h3 class="nama_produk">Robux</h3>
-                    </div>
+                    
 
                     <?php foreach($results as $each): ?>
                         <div class="kotak_produk">
