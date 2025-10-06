@@ -24,6 +24,7 @@ const warning_input_username = document.getElementById('required-usernamel2');
 
 const create_link = document.getElementById('createl');
 const login_link = document.querySelector('.cl2');
+const submit_sign_in = document.getElementById('nav-sign-in');
 const submit_sign_up = document.getElementById('nav-sign-up');
 
 
@@ -36,6 +37,12 @@ let emailCorrect1 = false;
 let passwordCorrect1 = false;
 let emailCorrect2 = false;
 let passwordCorrect2 = false;
+
+function updateButtonStates() {
+    submit_sign_in.disabled = !(emailCorrect1 && passwordCorrect1);
+    submit_sign_up.disabled = !(emailCorrect2 && passwordCorrect2);
+}
+
 input_username.addEventListener('input',function(){
     if(!input_username.value.trim()){
         input_username.classList.add('warning');
@@ -98,6 +105,7 @@ input_email.addEventListener('input',function(){
         input_email.classList.remove("warning");
         emailCorrect1 = true;
     }
+    updateButtonStates();
 });
 
 
@@ -136,6 +144,7 @@ input_email2.addEventListener('input',function(){
         
 
     }
+    updateButtonStates();
     
 });
 
@@ -151,6 +160,7 @@ input_password.addEventListener('input',function(){
         input_password.classList.remove("warning");
         passwordCorrect1 = true;
     }
+    updateButtonStates();
 });
 
 
@@ -165,24 +175,9 @@ input_password2.addEventListener('input',function(){
         input_password2.classList.remove('warning');
         passwordCorrect2 = true;
     }
+    updateButtonStates();
 });
 
 
-form1.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(emailCorrect1 && passwordCorrect1){
-        form1.submit();
-    }
-    
-})
 
-form2.addEventListener('submit',function(e){
-    e.preventDefault();
-    
-    if(emailCorrect2 && passwordCorrect2){
-        form2.submit();
-    }
-    
-    
-})
 
