@@ -170,7 +170,7 @@ input_password2.addEventListener('input',function(){
 
 form1.addEventListener('submit',function(e){
     e.preventDefault();
-    if(emailCorrect1 || passwordCorrect1){
+    if(emailCorrect1 && passwordCorrect1){
         form1.submit();
     }
     
