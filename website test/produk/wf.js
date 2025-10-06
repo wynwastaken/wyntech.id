@@ -52,7 +52,9 @@ function slide(){
   index++;
 }
 
-setInterval(slide,4000);
+window.addEventListener('load', () => {
+  setInterval(slide, 3000);
+});
 
 
 
