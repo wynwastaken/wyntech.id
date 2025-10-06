@@ -26,7 +26,7 @@ a{
     flex-direction:row;
     align-items: center;
     background-color: #1E419D;
-    height: 5.5rem;
+    height: 4.5rem;
     width: 100%;
     box-sizing: border-box;
     gap: 2.7rem;
@@ -56,7 +56,7 @@ a{
     color: white;
     align-items: center;
     font-family: 'Lilita One';
-    font-size: 3.3vh;
+    font-size: 3vh;
     margin-right: 3vh;
     flex: 1;
     
