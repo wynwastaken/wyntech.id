@@ -1070,9 +1070,13 @@ h1{
 }
 
 .kotak_t_d{
-
   display: flex;
-  gap: 250px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 500px;
+  
 }
 
 /*3==================================================================================================D*/
@@ -1082,7 +1086,7 @@ h1{
   position: relative;
   display: inline-block; 
   width: 180px;
-  height: 40px;
+  height: 50px;
 }
 
 .dropdown-toggle {
@@ -1162,7 +1166,7 @@ h1{
 
 
 .kotak_search{
-    width: 500px;
+    width: 200px;
     height: 15px;
     margin: auto;
     border: 1px solid #ccc;
@@ -1177,7 +1181,7 @@ h1{
 .search-icon {
     width: 20px;     
     height: 20px;
-    margin-right: 10px;
+    
     cursor: pointer;
 }
 
