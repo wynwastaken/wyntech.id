@@ -139,24 +139,21 @@
 
                         <form method="GET">
                             <ul class="dropdown-menu" id="ddMenu" role="menu" tabindex="-1" aria-label="Kategori">
-                                <ul class="dropdown-menu" id="ddMenu" role="menu" tabindex="-1" aria-label="Kategori">
-                                <li class="dropdown-item" data-cat="all" tabindex="0">
+                                <li class="dropdown-item <?php if($category==='all') echo 'active'; ?>" data-cat="all" tabindex="0">
                                     <button type="submit" name="category" value="all">All</button>
                                 </li>
-                                <li class="dropdown-item" data-cat="vialogin" tabindex="0">
+                                <li class="dropdown-item <?php if($category==='vialogin') echo 'active'; ?>" data-cat="vialogin" tabindex="0">
                                     <button type="submit" name="category" value="vialogin">Via Login</button>
                                 </li>
-                                <li class="dropdown-item" data-cat="voucher" tabindex="0">
+                                <li class="dropdown-item <?php if($category==='voucher') echo 'active'; ?>" data-cat="voucher" tabindex="0">
                                     <button type="submit" name="category" value="voucher">Voucher</button>
                                 </li>
-                                <li class="dropdown-item" data-cat="games" tabindex="0">
+                                <li class="dropdown-item <?php if($category==='games') echo 'active'; ?>" data-cat="games" tabindex="0">
                                     <button type="submit" name="category" value="games">Games</button>
                                 </li>
-                                <li class="dropdown-item" data-cat="akun" tabindex="0">
+                                <li class="dropdown-item <?php if($category==='akun') echo 'active'; ?>" data-cat="akun" tabindex="0">
                                     <button type="submit" name="category" value="akun">Akun</button>
                                 </li>
-                                
-                            </ul>
                             </ul>
                         </form>
                         
