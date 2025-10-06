@@ -191,9 +191,9 @@
 
                     <?php foreach($results as $each): ?>
                         
-                        <div class="gambar_produk">
-                            <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="img-produk">
-                        </div>
+                        
+                        <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
+                        
                                 
                         
                     <?php endforeach; ?>
