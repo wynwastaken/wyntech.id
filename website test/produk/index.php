@@ -192,7 +192,10 @@
                     <?php foreach($results as $each): ?>
                         
                         
-                        <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
+                        <div class="container_kotak_produk"> 
+                            <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
+                            <button class="button_kotak_produk">Beli</button>
+                        </div>
                         
                                 
                         
