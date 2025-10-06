@@ -20,14 +20,14 @@ const logout = document.querySelectorAll('.logout-icon');
 const carousel_window = document.querySelector('.carousel-window');
 const carousel_element = document.querySelectorAll('.card');
 const carousel_movable = document.querySelector('.carousel');
-const lebar_elemen = carousel_element[0].offsetWidth;
-const gap_antar_elemen = parseInt(getComputedStyle(carousel_movable).gap);
-const size_geser = lebar_elemen + gap_antar_elemen;
+
 const dots = document.querySelectorAll('.dot');
 let index = 0;
 
 function slide(){
-  
+  const lebar_elemen = carousel_element[0].offsetWidth;
+  const gap_antar_elemen = parseInt(getComputedStyle(carousel_movable).gap);
+  const size_geser = lebar_elemen + gap_antar_elemen;
   if(index >= carousel_element.length){
     index = 0;
     carousel_movable.style.transition = 'none'; 
