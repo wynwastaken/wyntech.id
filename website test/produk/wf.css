@@ -1209,17 +1209,16 @@ h1{
     
     width: 150px;
     height: 150px;
-    padding: 18px;
+    
     margin: 10px;
     
-    transition: transform .14s ease, box-shadow .14s ease;
+    transition: all .14s ease;
     
 }
 .kotak_produk:hover{
     transform: translateY(-6px);
-    box-shadow: #111;
+    filter: drop-shadow(0px 4px 0 black);
 }
-
 
 
 
