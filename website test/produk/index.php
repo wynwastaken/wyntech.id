@@ -142,8 +142,8 @@
                                 <li class="dropdown-item <?php if($category==='all') echo 'active'; ?>" data-cat="all" tabindex="0">
                                     <button type="submit" name="category" value="all">All</button>
                                 </li>
-                                <li class="dropdown-item <?php if($category==='topup') echo 'active'; ?>" data-cat="topup" tabindex="0">
-                                    <button type="submit" name="category" value="topup">Via Login</button>
+                                <li class="dropdown-item <?php if($category==='vialogin') echo 'active'; ?>" data-cat="vialogin" tabindex="0">
+                                    <button type="submit" name="category" value="vialogin">Via Login</button>
                                 </li>
                                 <li class="dropdown-item <?php if($category==='voucher') echo 'active'; ?>" data-cat="voucher" tabindex="0">
                                     <button type="submit" name="category" value="voucher">Voucher</button>
