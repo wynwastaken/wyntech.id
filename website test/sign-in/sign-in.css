@@ -141,11 +141,10 @@ body{
   
 }
 
-#password,#password2{
-  flex: 1;
+#password2{
   
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  width: 40vh;
+  
 }
 
 
@@ -230,11 +229,10 @@ input:focus{
   
   width: 60px;
   height: 30px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  
   background-color: white;
-  padding-top:6.5px ;
-  padding-bottom: 6.6px;
+  
+  
   
 }
 .si2{
@@ -247,6 +245,10 @@ input:focus{
   flex-direction: row;
   align-items: center;
   width: 51vh;
+  height: fit-content;
+
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -322,9 +324,14 @@ input:focus{
     padding-bottom:8.3px ;
   }
 
-  #password1,#password2{
-    flex: 1;
+  #password2{
+    width: 25vh;
   }
+
+  #password{
+    width: 25vh;
+  }
+
   .back1{
     right: 120px;
   }
