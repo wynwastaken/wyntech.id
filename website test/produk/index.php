@@ -53,6 +53,7 @@
 
 <body>
     <div class="halaman" >
+
         <div class="head-menu">
             <div class="head">
                 <img class="wf-logo" src="../wf-logo.png" alt="wfdigistore logo">
@@ -105,8 +106,8 @@
                     <?php endif; ?>
             </div>
         </div>
-    </div>
-    <div class="hal_utama">
+
+        
         <div class="layout">
             
             <div class="iklan">
@@ -140,7 +141,7 @@
                         <form method="GET">
                             <ul class="dropdown-menu" id="ddMenu" role="menu" tabindex="-1" aria-label="Kategori">
                                 <li class="dropdown-item <?php if($category==='all') echo 'active'; ?>" data-cat="all" tabindex="0">
-                                    <button type="submit" name="category" value="all">All</button>
+                                    <button type="submit" name="category" value="all" class="dd1">All</button>
                                 </li>
                                 <li class="dropdown-item <?php if($category==='vialogin') echo 'active'; ?>" data-cat="vialogin" tabindex="0">
                                     <button type="submit" name="category" value="vialogin">Via Login</button>
@@ -152,18 +153,14 @@
                                     <button type="submit" name="category" value="games">Games</button>
                                 </li>
                                 <li class="dropdown-item <?php if($category==='akun') echo 'active'; ?>" data-cat="akun" tabindex="0">
-                                    <button type="submit" name="category" value="akun">Akun</button>
+                                    <button type="submit" name="category" value="akun" >Akun</button>
                                 </li>
                             </ul>
-                        </form>
-                        
+                        </form>   
                     </div>
                     
                 
                     <form method="GET" id="searchForm">
-                       
-                        
-                        
                         <div class="kotak_search">
                             <img src="icon_search.png" alt="Search" class="search-icon">
                             <input class="search" name="search" type="search" placeholder="Cari produk..." 
@@ -186,9 +183,6 @@
                
 
                 <div class="luar_kotak_produk">
-                    
-                    
-
                     <?php foreach($results as $each): ?>
                         
                         
@@ -200,21 +194,14 @@
                                 
                         
                     <?php endforeach; ?>
-                    
-                            
-                      
-                    
-
-                    
-
                 </div>
-
             </div>
-
-
-        </div>
+        </div>    
     </div>
 
+
+    
+    
     
     <div class="container-scroll-up">
         <img class="scroll-up hilang-smooth button" src="../return.png" alt="scroll-up arrow"></img>
