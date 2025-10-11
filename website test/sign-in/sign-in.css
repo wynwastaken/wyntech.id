@@ -305,9 +305,9 @@ input:focus{
 
 @media (max-width:500px) {
 
-  .pop-up{
-    width: 42vh;
-    right: 30px;
+   .pop-up{
+    width: 45vh;
+    right: 50px;
     font-size: 15px;
   }
   
