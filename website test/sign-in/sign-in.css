@@ -311,7 +311,7 @@ input:focus{
 
   .pop-up{
     width: 43vh;
-    right: 70px;
+    left: 0px;
     font-size: 15px;
   }
   .judul-pop-up{
