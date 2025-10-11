@@ -1,5 +1,5 @@
 <?php
-require "konek.php";
+require "../sign-in/konek.php";
 
 if(isset($_POST["email"])){
     $email = $_POST["email"];
