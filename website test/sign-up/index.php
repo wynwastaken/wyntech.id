@@ -99,7 +99,7 @@
                 
                 <div class="pop-up">
                     <img class="close" src="close-button.png" alt="close-icon" >
-                    <div style=" margin-left: 20px ;display: flex; width: 40vh;flex-direction: row; gap: 0vh; margin-right: 8vh; ;">
+                    <div class="judul-pop-up">
                         <h2 style=" width: 30vh; margin: 0; font-family: 'Lilita One'; margin-top: 10px;">Email Verification Sent </h3>
                         <img src="verif.png" alt="verif-icon" style="position: relative; width: 65px; ">
                     </div>

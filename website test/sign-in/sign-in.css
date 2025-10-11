@@ -302,9 +302,15 @@ input:focus{
   margin: 0; font-family: 'Lilita One'; width: 45vh;
 }
 
+.judul-pop-up{
+  margin-left: 20px ;display: flex; width: 40vh;flex-direction: row; gap: 0vh; margin-right: 8vh; 
+}
 
 @media (max-width:500px) {
 
+  .judul-pop-up{
+    width: 30vh;
+  }
   .pop-up{
     width: 43vh;
     right: 55px;
