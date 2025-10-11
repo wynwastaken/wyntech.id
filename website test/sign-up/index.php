@@ -28,7 +28,7 @@
                 $mail->Host       = 'smtp.gmail.com';                     
                 $mail->SMTPAuth   = true;                                  
                 $mail->Username   = 'wyntech.id@gmail.com';                    
-                $mail->Password   = 'swis rifm lgfz awts';                              
+                $mail->Password   = '-';                              
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;             
                 $mail->Port       = 465;                                    
 
