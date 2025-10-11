@@ -305,10 +305,14 @@ input:focus{
 
 @media (max-width:500px) {
 
-   .pop-up{
+  .pop-up{
     width: 43vh;
     right: 55px;
     font-size: 15px;
+  }
+
+  .isi-pop-up{
+    width: 30vh;
   }
   
   .sign-in-page{
