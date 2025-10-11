@@ -23,7 +23,7 @@ show.addEventListener('click',function(){
         
         input_password2.type = "text";
     }else{
-        show.src = "./sign-in/unshow.png";
+        show.src = "../sign-in/unshow.png";
         
         input_password2.type = "password";
         }
