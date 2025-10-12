@@ -36,7 +36,7 @@
                 $mail->setFrom('wyntech.id@gmail.com', 'WFdigistore');
                 $mail->addAddress($email, 'Customer');     //Add a recipient
 
-                $mail->addReplyTo('WF@digistore.com', 'WFdigistore');
+                $mail->addReplyTo('wyntech.id@gmail.com', 'WFdigistore');
             
 
                  
