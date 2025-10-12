@@ -31,6 +31,7 @@
                 $mail->Password   = '-';                              
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;             
                 $mail->Port       = 587;
+                $mail->Timeout = 10;
                 $mail->SMTPKeepAlive = true;  
                 //Recipients
                 $mail->setFrom('wyntech.id@gmail.com', 'WFdigistore');
