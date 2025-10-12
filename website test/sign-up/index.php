@@ -29,9 +29,8 @@
                 $mail->SMTPAuth   = true;                                  
                 $mail->Username   = 'wyntech.id@gmail.com';                    
                 $mail->Password   = '-';                              
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;             
-                $mail->Port       = 465;                                    
-
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;             
+                $mail->Port       = 587;
                 $mail->SMTPKeepAlive = true;  
                 //Recipients
                 $mail->setFrom('wyntech.id@gmail.com', 'WFdigistore');
