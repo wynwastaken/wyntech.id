@@ -363,9 +363,19 @@ h1{
   
 }
 
-@media (max-width: 715px) {
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 420px) {
   .navs {
-    visibility: hidden;   /* biar ga bisa diklik dan diliat */
+    display: none;   /* biar ga bisa diklik dan diliat */
     position: relative;   
     top: 4rem;              
     flex-direction: column;
@@ -378,6 +388,689 @@ h1{
   .halaman{
     height:fit-content;
     margin-top: 10vh;
+    
+  }
+
+  .container-scroll-up{
+    
+    height: fit-content;
+    
+    
+  }
+  .hamburger {
+    
+    display: flex;
+    visibility: visible;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 1rem;
+    
+  }
+
+  .wf-logo{
+    display: flex;
+    height: 7rem;
+
+  }
+  
+ 
+  .s1{
+    display: none;
+  }
+
+  .sign-in.s2{
+    margin-left: 2rem;
+    visibility: 1;
+  }
+
+  
+  .head{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10000;
+  } 
+  
+  .menu-bar{
+    
+    
+    display: flex;
+    
+    position:fixed;
+    top: -180px;
+    background-color: #1E419D;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    align-items: center;
+    font-family: 'Lilita One';
+    font-size: 3.3vh;
+    width: 100%;
+    
+    visibility: hidden;
+    transition:  transform 1s ease, visibility 0.8s ease;
+
+    
+    user-select: none;
+    
+    
+  }
+
+  
+    .menu-bar .button .nav,
+    .menu-bar .nav.button {
+    font-size: 3.3vh;
+  }
+
+
+  
+
+
+  
+  
+  
+  
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding-top: 40px;
+
+    
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+        font-family: 'Lilita One';
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+      
+        padding-top: 1px;
+    }
+
+/*3===============================D*/
+
+    
+
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        padding-top: 40px;
+        font-family: 'Lilita One';
+
+       
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+       
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+       
+        padding-top: 1px;
+    }
+
+    .isi{
+        padding-top: 50px;
+        
+    }
+
+
+    .pertanyaan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+
+    .kotak_tanya{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+    }
+
+    .tanya{
+        font-size:x-large;
+        font-family: 'Lilita One';
+        font-weight:bold
+    }
+
+
+    .arrow{
+       
+        border: none;
+        cursor: pointer;
+        height: 3.5vh;
+        width:3.5vh;
+        
+        
+        transition: transform 0.25s ease;
+        
+    }
+
+    .jawaban {
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
+        padding: 0 16px;
+        
+        border-radius: 4px;
+        
+        width: 80.5%;
+        color: #111;
+    }
+
+    .jawaban p { 
+        margin: 10px 0; 
+        
+        line-height: 1.6; 
+        font-family: 'Lilita One';
+    }
+
+    .garis{
+        border-bottom: 2px solid black;
+        width: 20rem;
+       
+        padding-top: 10px;
+    }
+
+    .kotak_tanya.open{
+        box-shadow: gray;
+    }
+
+    .kotak_tanya.open .arrow{
+        transform: rotate(90deg);
+    }
+
+    .kotak_tanya.open + .jawaban{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        opacity: 1;
+        max-height: 400px;
+    }
+      
+/*3====================D*/
+
+    .lower{
+    /*3====D*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    /*3====D*/
+
+        padding-top: 40px;
+        
+        
+    }
+
+    .isi_lower{
+        background-color: #1E419D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        text-align: center;
+        font-family: 'Lilita One';
+    
+        padding-bottom: 20px;
+        width: 90%;
+    }
+
+
+
+    .judul_lower h3{
+
+        color: #ffffff;
+        
+        margin-bottom: 0.5rem;
+        font-size:x-large;
+    
+    
+        width: 360px;
+    
+
+
+    }
+
+    .judul_lower p{
+
+        color: #ffffff;
+
+        width: 360px;
+    }
+
+    .hubungi{
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #1E419D;;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+
+    .hubungi:hover{
+        
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+  .navs {
+    display: none;   /* biar ga bisa diklik dan diliat */
+    position: relative;   
+    top: 4rem;              
+    flex-direction: column;
+    background-color: #1E419D;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .halaman{
+    height:fit-content;
+    margin-top: 10vh;
+
+  }
+
+  .container-scroll-up{
+    
+    height: fit-content;
+    
+    
+  }
+  .hamburger {
+    
+    display: flex;
+    visibility: visible;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 1rem;
+    
+  }
+
+  .wf-logo{
+    display: flex;
+    height: 7rem;
+
+  }
+  
+ 
+  .s1{
+    display: none;
+  }
+
+  .sign-in.s2{
+    margin-left: 2rem;
+    visibility: 1;
+  }
+
+  
+  .head{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10000;
+  } 
+  
+  .menu-bar{
+    
+    
+    display: flex;
+    
+    position:fixed;
+    top: -180px;
+    background-color: #1E419D;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    align-items: center;
+    font-family: 'Lilita One';
+    font-size: 3.3vh;
+    width: 100%;
+    
+    visibility: hidden;
+    transition:  transform 1s ease, visibility 0.8s ease;
+
+    
+    user-select: none;
+    
+    
+  }
+
+    .menu-bar .button .nav,
+    .menu-bar .nav.button {
+    font-size: 3.3vh;
+  }
+
+  
+
+  
+
+
+  
+  
+  
+  
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding-top: 40px;
+
+    
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+        font-family: 'Lilita One';
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+      
+        padding-top: 1px;
+    }
+
+/*3===============================D*/
+
+    
+
+    h1{
+        margin: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        padding-top: 40px;
+        font-family: 'Lilita One';
+
+       
+    }
+
+
+    .judul{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #000000;
+       
+    }
+
+
+    .garis_awal{
+    
+        border-bottom: 2px solid black;
+        width: 22rem;
+       
+        padding-top: 1px;
+    }
+
+    .isi{
+        padding-top: 50px;
+        
+    }
+
+
+    .pertanyaan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+
+    .kotak_tanya{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+    }
+
+    .tanya{
+        font-size:x-large;
+        font-family: 'Lilita One';
+        font-weight:bold
+    }
+
+
+    .arrow{
+       
+        border: none;
+        cursor: pointer;
+        height: 3.5vh;
+        width:3.5vh;
+        
+        
+        transition: transform 0.25s ease;
+        
+    }
+
+    .jawaban {
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.36s ease, opacity 0.28s ease, padding 0.28s ease;
+        padding: 0 16px;
+        
+        border-radius: 4px;
+        
+        width: 80.5%;
+        color: #111;
+    }
+
+    .jawaban p { 
+        margin: 10px 0; 
+        
+        line-height: 1.6; 
+        font-family: 'Lilita One';
+    }
+
+    .garis{
+        border-bottom: 2px solid black;
+        width: 20rem;
+       
+        padding-top: 10px;
+    }
+
+    .kotak_tanya.open{
+        box-shadow: gray;
+    }
+
+    .kotak_tanya.open .arrow{
+        transform: rotate(90deg);
+    }
+
+    .kotak_tanya.open + .jawaban{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        opacity: 1;
+        max-height: 400px;
+    }
+      
+/*3====================D*/
+
+    .lower{
+    /*3====D*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    /*3====D*/
+
+        padding-top: 40px;
+        
+        
+    }
+
+    .isi_lower{
+        background-color: #1E419D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        text-align: center;
+        font-family: 'Lilita One';
+    
+        padding-bottom: 20px;
+        width: 90%;
+    }
+
+
+
+    .judul_lower h3{
+
+        color: #ffffff;
+        
+        margin-bottom: 0.5rem;
+        font-size:x-large;
+    
+    
+        width: 360px;
+    
+
+
+    }
+
+    .judul_lower p{
+
+        color: #ffffff;
+
+        width: 360px;
+    }
+
+    .hubungi{
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #1E419D;;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+
+    .hubungi:hover{
+        
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 715px) {
+  .navs {
+    display: none;   /* biar ga bisa diklik dan diliat */
+    position: relative;   
+    top: 4rem;              
+    flex-direction: column;
+    background-color: #1E419D;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .halaman{
+    height:fit-content;
+    margin-top: 10vh;
+
   }
 
   .container-scroll-up{
@@ -683,6 +1376,58 @@ h1{
     }
 
 }
+
+
+.muncul{
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.hilang{
+  display: none;
+}
+
+
+
+
+
+.show2{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease,visibility 1s ease;
+}
+
+.hilang-smooth{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease,visibility 0.1s ease;
+}
+.show{
+    
+    transform: translateY(240px);
+    display: flex;
+    transition:  transform 1s ease, visibility 0.1s ease;
+}
+
+
+/*3=====================================================D*/
+
+
+
+
+
+
+
+
+
+
 
 
 .muncul{
