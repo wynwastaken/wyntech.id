@@ -3,13 +3,16 @@
 
     require '../sign-in/konek.php';
 
+    function e($text){
+        return htmlspecialchars($text,ENT_QUOTES,'UTF-8');
+    }
     // ngambil kategori
     $category = 'all';
-    if (!empty($_GET['category'])) $category = trim($_GET['category']);
+    if (!empty($_GET['category'])) $category = e(trim($_GET['category']));
 
     // ngambil search
     $search = '';
-    if (!empty($_GET['search'])) $search = trim($_GET['search']);
+    if (!empty($_GET['search'])) $search = e(trim($_GET['search']));
 
     
     $allowed = ['all','vialogin','voucher','games','akun'];
