@@ -34,7 +34,7 @@
 
                 $mail->SMTPKeepAlive = true;  
                 //Recipients
-                $mail->setFrom('WF@digistore.com', 'WFdigistore');
+                $mail->setFrom('wyntech.id@gmail.com', 'WFdigistore');
                 $mail->addAddress($email, 'Customer');     //Add a recipient
 
                 $mail->addReplyTo('WF@digistore.com', 'WFdigistore');

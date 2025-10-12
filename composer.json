@@ -1,0 +1,18 @@
+{
+    "name": "wfdigistore/projectwfdigistore",
+    "description": "yes",
+    "autoload": {
+        "psr-4": {
+            "Wfdigistore\\Projectwfdigistore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wynwastaken",
+            "email": "delwyn.fayad@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.11"
+    }
+}
