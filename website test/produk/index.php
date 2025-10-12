@@ -167,7 +167,7 @@
                         <div class="kotak_search">
                             <img src="icon_search.png" alt="Search" class="search-icon">
                             <input class="search" name="search" type="search" placeholder="Cari produk..." 
-                                value="<?php echo ($search); ?>">
+                                value="<?php echo e($search); ?>">
                 
                         </div>
                     </form>
