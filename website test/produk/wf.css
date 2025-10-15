@@ -2545,7 +2545,46 @@ h1{
 
 
 
+.fade1{
+  opacity: 0;
+  
+  transform: translateX(-200px);
+  
+  animation: 0.5s woosh cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
 
+.fade2{
+  opacity: 0;
+  
+  transform: translateY(-30px);
+  animation: 0.5s woosh2 cubic-bezier(0.25, 1, 0.5, 1) forwards; 
+}
 
+.fade3{
+  opacity: 0;
+  
+  transform: translateY(30px);
+  animation: 0.5s woosh3 cubic-bezier(0.25, 1, 0.5, 1) forwards; 
+}
+
+@keyframes woosh3 {
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes woosh2 {
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes woosh {
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 
 /*=============================================================================================================================================================D*/

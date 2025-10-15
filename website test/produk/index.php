@@ -113,12 +113,12 @@
         
         <div class="layout">
             
-            <div class="iklan">
+            <div class="iklan fade1">
                 <div class="carousel-window">
                     <div class="carousel">
-                        <img class = "card" src="img1.jpeg" alt="image-1">
-                        <img class = "card" src="img1.jpeg" alt="image-2">
-                        <img class = "card" src="img1.jpeg" alt="image-3">
+                        <img class = "card" src="img1.jpg" alt="image-1">
+                        <img class = "card" src="img2.jpg" alt="image-2">
+                        <img class = "card" src="img3.jpg" alt="image-3">
                     </div>
                 </div>
                 <div class="garis_sidebar">
@@ -132,7 +132,7 @@
 
             <div class="content">
 
-                <div class="kotak_t_d">
+                <div class="kotak_t_d fade2">
 
                     <div class="luar_drop" id="tabsDropdown" data-current="<?php echo ($category); ?>">
                         <button class="dropdown-toggle" id="ddToggle" aria-haspopup="true" aria-expanded="false">
@@ -189,7 +189,7 @@
                     <?php foreach($results as $each): ?>
                         
                         
-                        <div class="container_kotak_produk"> 
+                        <div class="container_kotak_produk fade3"> 
                             <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
                             <button class="button_kotak_produk">Beli</button>
                         </div>
