@@ -88,7 +88,7 @@
     </div>
     
 </body>
-<audio src="../click-sound-effect.wav" id="click-sound-effect"></audio>
+
 <script src="sign-in.js"></script>
 </html>
 

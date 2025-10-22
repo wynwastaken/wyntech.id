@@ -6,6 +6,8 @@
     function e($text){
         return htmlspecialchars($text,ENT_QUOTES,'UTF-8');
     }
+
+    
     // ngambil kategori
     $category = 'all';
     if (!empty($_GET['category'])) $category = trim($_GET['category']);
@@ -14,6 +16,10 @@
     $search = '';
     if (!empty($_GET['search'])) $search = trim($_GET['search']);
 
+    if(!empty($_GET['id_produk'])){
+        $_SESSION['produk'] = $_GET['id_produk'] ;
+        header('Location:../detail-produk');
+    }
     
     $allowed = ['all','vialogin','voucher','games','akun'];
     if (!in_array($category, $allowed, true)) $category = 'all';
@@ -132,9 +138,9 @@
 
             <div class="content">
 
-                <div class="kotak_t_d fade2">
+                <div class="kotak_t_d">
 
-                    <div class="luar_drop" id="tabsDropdown" data-current="<?php echo ($category); ?>">
+                    <div class="luar_drop fade2" id="tabsDropdown" data-current="<?php echo ($category); ?>">
                         <button class="dropdown-toggle" id="ddToggle" aria-haspopup="true" aria-expanded="false">
                             <div class="selected-category">Kategori</div>
                             <span class="chev">▾</span>
@@ -164,7 +170,7 @@
                     
                 
                     <form method="GET" id="searchForm">
-                        <div class="kotak_search">
+                        <div class="kotak_search fade2">
                             <img src="icon_search.png" alt="Search" class="search-icon">
                             <input class="search" name="search" type="search" placeholder="Cari produk..." 
                                 value="<?php echo e($search); ?>">
@@ -189,9 +195,15 @@
                     <?php foreach($results as $each): ?>
                         
                         
-                        <div class="container_kotak_produk fade3"> 
-                            <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
-                            <button class="button_kotak_produk">Beli</button>
+                        <div class="container_kotak_produk fade3">
+                            <form method="GET">
+                                <img src="<?php echo $each['path_produk']; ?>" alt="<?php echo $each['nama_produk']; ?>" class="kotak_produk">
+                                <button class="button_kotak_produk" type="submit" name="id_produk" value="<?php echo $each['id']?>">
+                                    Beli
+    
+                                </button>
+                            </form>
+                            
                         </div>
                         
                                 
@@ -210,6 +222,6 @@
         <img class="scroll-up hilang-smooth button" src="../return.png" alt="scroll-up arrow"></img>
     </div>
 </body>
-<audio id = "click-sound-effect" src="../click-sound-effect.wav"></audio>
+
 <script src="wf.js"></script>
 </html>

@@ -142,6 +142,6 @@
         <img class="scroll-up  button" src="../return.png" alt="scroll-up arrow"></img>
     </div>
 </body>
-<audio id = "click-sound-effect" src="../click-sound-effect.wav"></audio>
+
 <script src="test.js"></script>
 </html>
