@@ -172,7 +172,7 @@
 
                             <div class="isi_game">
                                 <div class="isi_gambar">
-                                    <img class="img_jual" src="Nanami.png" alt="image">
+                                    <img class="img_jual" src="../produk/<?php echo $results['path_produk'] ?>" alt="image">
                                 </div>
                                 
 
